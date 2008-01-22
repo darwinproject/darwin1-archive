@@ -81,14 +81,14 @@
 
 # Input datasets
  &PARM05
- bathyFile=      'input_ocmip/depth_g77.bin',
- hydrogThetaFile='input_ocmip/lev_clim_temp.bin',
- hydrogSaltFile= 'input_ocmip/lev_clim_salt.bin',
- zonalWindFile=  'input_ocmip/tren_taux.bin',
- meridWindFile=  'input_ocmip/tren_tauy.bin',
- thetaClimFile=  'input_ocmip/lev_monthly_temp.bin',
- saltClimFile=   'input_ocmip/lev_monthly_salt.bin',
- surfQFile=      'input_ocmip/shi_qnet.bin',
- EmPmRFile=      'input_ocmip/shi_empmr_year.bin',
+ bathyFile=      '../input/input_ocmip/depth_g77.bin',
+ hydrogThetaFile='../input/input_ocmip/lev_clim_temp.bin',
+ hydrogSaltFile= '../input/input_ocmip/lev_clim_salt.bin',
+ zonalWindFile=  '../input/input_ocmip/tren_taux.bin',
+ meridWindFile=  '../input/input_ocmip/tren_tauy.bin',
+ thetaClimFile=  '../input/input_ocmip/lev_monthly_temp.bin',
+ saltClimFile=   '../input/input_ocmip/lev_monthly_salt.bin',
+ surfQFile=      '../input/input_ocmip/shi_qnet.bin',
+ EmPmRFile=      '../input/input_ocmip/shi_empmr_year.bin',
  the_run_name=   'Darwin12',
  &
