@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/CPP_OPTIONS.h,v 1.1 2008/01/22 17:30:46 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/CPP_OPTIONS.h,v 1.2 2008/02/26 19:16:05 jahn Exp $
 C $Name:  $
 
 #ifndef CPP_OPTIONS_H
@@ -11,7 +11,7 @@ C Note: this should be a run-time option
 #define SHORTWAVE_HEATING
 
 C o Include/exclude Duffy et al. (GRL 1999) salt plume scheme
-#undef ALLOW_SALT_PLUME
+c#undef ALLOW_SALT_PLUME
 
 C o Include/exclude phi_hyd calculation code
 #define INCLUDE_PHIHYD_CALCULATION_CODE

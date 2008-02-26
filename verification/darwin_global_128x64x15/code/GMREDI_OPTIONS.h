@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_global_128x64x15/code/GMREDI_OPTIONS.h,v 1.1 2007/12/13 16:28:45 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_global_128x64x15/code/GMREDI_OPTIONS.h,v 1.2 2008/02/26 17:30:14 jahn Exp $
 C $Name:  $
 
 C CPP options file for GM/Redi package
@@ -36,3 +36,7 @@ C  instead of the Skew-Flux form (=default)
 
 #endif /* ALLOW_GMREDI */
 #endif /* GMREDI_OPTIONS_H */
+
+CEH3 ;;; Local Variables: ***
+CEH3 ;;; mode:fortran ***
+CEH3 ;;; End: ***

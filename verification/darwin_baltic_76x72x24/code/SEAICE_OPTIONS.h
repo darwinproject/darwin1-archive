@@ -1,4 +1,5 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/SEAICE_OPTIONS.h,v 1.1 2008/01/22 17:30:47 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/SEAICE_OPTIONS.h,v 1.2 2008/02/26 19:16:05 jahn Exp $
+C $Name:  $
 
 C     /==========================================================\
 C     | SEAICE_OPTIONS.h                                         |
@@ -23,39 +24,12 @@ C     Sea-ice dynamics can also be turned off at runtime
 C     using variable SEAICEuseDYNAMICS.
 #define SEAICE_ALLOW_DYNAMICS
 
-C--   By default, pkg/seaice defines forcing variable internally, in
-C     SEAICE_FFIELDS.h, and reads them in from files.  When CPP option
-C     SEAICE_EXTERNAL_FORCING is defined, the above forcing variables
-C     are defined and provided by an external package.  At present this
-C     option is hardwired for pkg/exf and the variables are passed using
-C     include file EXF_FIELDS.h (=> cannot be defined without pkg/EXF )
-#define SEAICE_EXTERNAL_FORCING
-#ifndef ALLOW_EXF
-# undef SEAICE_EXTERNAL_FORCING
-#endif
-
-#ifdef  SEAICE_EXTERNAL_FORCING
-#  include "EXF_OPTIONS.h"
 C--   By default, the sea-ice package uses its own integrated bulk
 C     formulae to compute fluxes (fu, fv, EmPmR, Qnet, and Qsw) over
 C     open-ocean.  When this flag is set, these variables are computed
 C     in a separate external package, for example, pkg/exf, and then
 C     modified for sea-ice effects by pkg/seaice.
-# define SEAICE_EXTERNAL_FLUXES
-
-#else  /* SEAICE_EXTERNAL_FORCING */
-C-    current implementation requires those options to be set:
-# undef  SEAICE_EXTERNAL_FLUXES
-# define ALLOW_ATM_TEMP
-# define ALLOW_DOWNWARD_RADIATION
-# define ALLOW_RUNOFF
-
-#endif /* SEAICE_EXTERNAL_FORCING */
-
-#ifdef ALLOW_OBCS
-C- OBCS information is needed to define the correct sea ice mask.
-#include "OBCS_OPTIONS.h"
-#endif /* ALLOW_OBCS */
+#define SEAICE_EXTERNAL_FLUXES
 
 C--   By default, the sea-ice package uses 2-category thermodynamics.
 C     When this flag is set, an 8-category calculation of ice
@@ -87,15 +61,20 @@ C     option defined the parameter SEAICE_freeze has no effect.
 C--   Allow SEAICEuseFlooding, which converts snow to ice if submerged.
 #define ALLOW_SEAICE_FLOODING
 
+C--   By default sea ice is fresh.  Set following flag for salty ice.
+#undef SEAICE_SALINITY
+
 C--   By default the seaice model is discretized on a B-Grid (for 
 C     historical reasons). Define the following flag to use a new
 C     (not thoroughly) test version on a C-grid
 #define SEAICE_CGRID
 
-C--   Only for the C-grid version it is possible to enable EVP code by
-C     defining the following flag
+C--   Only for the C-grid version it is possible to 
 #ifdef SEAICE_CGRID
+C     enable EVP code by defining the following flag
 #undef SEAICE_ALLOW_EVP
+C     allow the truncated ellipse rheology (runtime flag SEAICEuseTEM)
+#undef SEAICE_ALLOW_TEM
 #endif /* SEAICE_CGRID */
 
 C--   When set use MAX_HEFF to cap sea ice thickness in seaice_growth

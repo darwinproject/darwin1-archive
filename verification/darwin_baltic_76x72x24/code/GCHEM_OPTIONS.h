@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/Attic/GCHEM_OPTIONS.h,v 1.1 2008/01/22 17:30:47 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/Attic/GCHEM_OPTIONS.h,v 1.2 2008/02/26 19:16:05 jahn Exp $
 C $Name:  $
 
 #ifndef GCHEM_OPTIONS_H
@@ -30,11 +30,11 @@ CEOP
 #undef  OLD_NSCHEME
 #undef  ALLOW_MUTANTS
 #define	PORT_RAND
-#define OLDSEED
+#undef  OLDSEED
 
-#undef  CHECK_CONS
-#undef  DAR_DIAG_RSTAR
-#undef  DAR_DIAG_DIVER
+#define CHECK_CONS
+#define DAR_DIAG_RSTAR
+#define DAR_DIAG_DIVER
 
 
 #endif /* ALLOW_GCHEM */

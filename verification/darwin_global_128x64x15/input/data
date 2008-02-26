@@ -52,6 +52,7 @@
  deltaTtracer= 43200.0,
  deltaTClock = 43200.0,
  abEps = 0.1,
+ pickupStrictlyMatch=.FALSE.,
  pChkptFreq=311040000.,
  chkptFreq= 311040000.,
  dumpFreq=  31104000.,

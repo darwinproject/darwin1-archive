@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/PTRACERS_SIZE.h,v 1.1 2008/01/22 17:30:47 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/PTRACERS_SIZE.h,v 1.2 2008/02/26 19:16:05 jahn Exp $
 C $Name:  $
 
 #ifdef ALLOW_PTRACERS
@@ -18,5 +18,15 @@ C     Number of tracers
       INTEGER PTRACERS_num
       PARAMETER(PTRACERS_num = 99 )
 
+#ifdef ALLOW_AUTODIFF_TAMC
+      INTEGER    iptrkey
+      INTEGER    maxpass
+      PARAMETER( maxpass     = PTRACERS_num + 2 )
+#endif
+
 CEOP
 #endif /* ALLOW_PTRACERS */
+
+CEH3 ;;; Local Variables: ***
+CEH3 ;;; mode:fortran ***
+CEH3 ;;; End: ***
