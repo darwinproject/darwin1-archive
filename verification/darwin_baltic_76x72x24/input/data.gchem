@@ -1,11 +1,7 @@
  &GCHEM_PARM01
-#iceFile='darwin/nasa_icefraction_mth-2d.bin',
-#windFile='darwin/tren_speed_mth-2d.bin',
- IronFile='Fe_const_76x72_12.bin',
-#Filename1='darwin/par_ecco.bin_mth-2d.bin',
-#SilicaFile='',
-  nsubtime=1,
- gchem_ForcingPeriod=2592000.,
- gchem_ForcingCycle=31104000.,
-  gchem_int1=11231,
+ useDARWIN=.TRUE.,
+ nsubtime=1,
+# now set in data.darwin
+#gchem_ForcingPeriod=2592000.,
+#gchem_ForcingCycle=31104000.,
  /

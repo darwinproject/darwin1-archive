@@ -1,7 +1,4 @@
  &GCHEM_PARM01
- iceFile='../input/input_ocmip/fice.bin',
- IronFile='../input/input_ocmip/mah_flux_smooth.bin',
- Filename1='../input/input_ocmip/par_ocmip.bin_mth-2d.bin',
+ useDARWIN=.TRUE.,
  nsubtime=4,
- gchem_int1=801,
  /
