@@ -139,7 +139,7 @@
 
 # Input datasets
  &PARM05
- bathyFile      ='ETOPO2_76x72_baltic',
+ bathyFile      ='ETOPO2_76x72_baltic_corr',
  hydrogThetaFile='',
  hydrogSaltFile ='',
  &

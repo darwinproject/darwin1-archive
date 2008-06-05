@@ -6,6 +6,8 @@
  OB_Jnorth =   76*72,
  OB_Iwest  =   72*1,
 #
+#OBCSfixTopo=.false.,
+#
  useOBCSprescribe=.TRUE.,
 #
  OBNsFile='OBNs_baltic_76x72.stable',
