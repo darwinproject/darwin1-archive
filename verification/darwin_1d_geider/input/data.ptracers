@@ -9,7 +9,7 @@
  PTRACERS_diffKr(1)=1.E-5,
  PTRACERS_useGMRedi(1)=.FALSE. ,
  PTRACERS_useKPP(1)=.FALSE. ,
- PTRACERS_initialFile(1)='input/loc1_phos_janprof.bin',
+ PTRACERS_initialFile(1)='../input/input/loc1_phos_janprof.bin',
 # tracer 2 - nitrate
  PTRACERS_names(2)='NO3',
  PTRACERS_units(2)='mmol N/m^3',
@@ -18,7 +18,7 @@
  PTRACERS_diffKr(2)=1.E-5,
  PTRACERS_useGMRedi(2)=.FALSE. ,
  PTRACERS_useKPP(2)=.FALSE. ,
- PTRACERS_initialFile(2)='input/loc1_nitr_janprof.bin',
+ PTRACERS_initialFile(2)='../input/input/loc1_nitr_janprof.bin',
 # tracer 3 - dissolved iron
  PTRACERS_names(3)='FeT',
  PTRACERS_units(3)='mmol Fe/m^3',
@@ -27,8 +27,8 @@
  PTRACERS_diffKr(3)=1.E-5,
  PTRACERS_useGMRedi(3)=.FALSE. ,
  PTRACERS_useKPP(3)=.FALSE. ,
-#PTRACERS_initialFile(3)='input/loc1_FeT_run83_janprof.bin',
- PTRACERS_initialFile(3)='input/fet_uniform.bin',
+#PTRACERS_initialFile(3)='../input/input/loc1_FeT_run83_janprof.bin',
+ PTRACERS_initialFile(3)='../input/input/fet_uniform.bin',
 # tracer 4 - silicic acid
  PTRACERS_names(4)='SiO2',
  PTRACERS_units(4)='mmol Si/m^3',
@@ -37,7 +37,7 @@
  PTRACERS_diffKr(4)=1.E-5,
  PTRACERS_useGMRedi(4)=.FALSE. ,
  PTRACERS_useKPP(4)=.FALSE. ,
- PTRACERS_initialFile(4)='input/loc1_sil_janprof.bin',
+ PTRACERS_initialFile(4)='../input/input/loc1_sil_janprof.bin',
 # tracer 5 - DOP 
  PTRACERS_names(5)='DOP',
  PTRACERS_units(5)='mmol P/m^3',
@@ -46,7 +46,7 @@
  PTRACERS_diffKr(5)=1.E-5,
  PTRACERS_useGMRedi(5)=.FALSE. ,
  PTRACERS_useKPP(5)=.FALSE.  ,
- PTRACERS_initialFile(5)='input/loc1_DOP_run83_janprof.bin',
+ PTRACERS_initialFile(5)='../input/input/loc1_DOP_run83_janprof.bin',
 # tracer 6 - DON
  PTRACERS_names(6)='DON',
  PTRACERS_units(6)='mmol N/m^3',
@@ -55,7 +55,7 @@
  PTRACERS_diffKr(6)=1.E-5,
  PTRACERS_useGMRedi(6)=.FALSE. ,
  PTRACERS_useKPP(6)=.FALSE.  ,
- PTRACERS_initialFile(6)='input/loc1_DON_run83_janprof.bin',
+ PTRACERS_initialFile(6)='../input/input/loc1_DON_run83_janprof.bin',
 # tracer 7 - DOFe
  PTRACERS_names(7)='DOFe',
  PTRACERS_units(7)='mmol Fe/m^3',
@@ -64,7 +64,7 @@
  PTRACERS_diffKr(7)=1.E-5,
  PTRACERS_useGMRedi(7)=.FALSE. ,
  PTRACERS_useKPP(7)=.FALSE.  ,
- PTRACERS_initialFile(7)='input/loc1_DOFe_run83_janprof.bin',
+ PTRACERS_initialFile(7)='../input/input/loc1_DOFe_run83_janprof.bin',
 # tracer 8 - ZOO1P
  PTRACERS_names(8)='ZOO1P',
  PTRACERS_units(8)='mmol P/m^3',
@@ -73,7 +73,7 @@
  PTRACERS_diffKr(8)=1.E-5,
  PTRACERS_useGMRedi(8)=.FALSE. ,
  PTRACERS_useKPP(8)=.FALSE.  ,
- PTRACERS_initialFile(8)='input/loc1_ZOOP_run83_janprof.bin',
+ PTRACERS_initialFile(8)='../input/input/loc1_ZOOP_run83_janprof.bin',
 # tracer 9 - ZOO1N
  PTRACERS_names(9)='ZOO1N',
  PTRACERS_units(9)='mmol N/m^3'
@@ -82,7 +82,7 @@
  PTRACERS_diffKr(9)=1.E-5,
  PTRACERS_useGMRedi(9)=.FALSE. ,
  PTRACERS_useKPP(9)=.FALSE.  ,
- PTRACERS_initialFile(9)='input/loc1_ZOON_run83_janprof.bin',
+ PTRACERS_initialFile(9)='../input/input/loc1_ZOON_run83_janprof.bin',
 # tracer 10 - ZOO1Fe
  PTRACERS_names(10)='ZOO1Fe',
  PTRACERS_units(10)='mmol Fe/m^3'
@@ -91,7 +91,7 @@
  PTRACERS_diffKr(10)=1.E-5,
  PTRACERS_useGMRedi(10)=.FALSE. ,
  PTRACERS_useKPP(10)=.FALSE.  ,
- PTRACERS_initialFile(10)='input/loc1_ZOOFe_run83_janprof.bin',
+ PTRACERS_initialFile(10)='../input/input/loc1_ZOOFe_run83_janprof.bin',
 # tracer 11 - ZOO1Si
  PTRACERS_names(11)='ZOO1Si',
  PTRACERS_units(11)='mmol Si/m^3'
@@ -100,7 +100,7 @@
  PTRACERS_diffKr(11)=1.E-5,
  PTRACERS_useGMRedi(11)=.FALSE. ,
  PTRACERS_useKPP(11)=.FALSE.  ,
- PTRACERS_initialFile(11)='input/loc1_ZOOSi_run83_janprof.bin',
+ PTRACERS_initialFile(11)='../input/input/loc1_ZOOSi_run83_janprof.bin',
 # tracer 12 - ZOO2P
  PTRACERS_names(12)='ZOO2P',
  PTRACERS_units(12)='mmol P/m^3',
@@ -109,7 +109,7 @@
  PTRACERS_diffKr(12)=1.E-5,
  PTRACERS_useGMRedi(12)=.FALSE. ,
  PTRACERS_useKPP(12)=.FALSE.  ,
- PTRACERS_initialFile(12)='input/loc1_ZOOP_run83_janprof.bin',
+ PTRACERS_initialFile(12)='../input/input/loc1_ZOOP_run83_janprof.bin',
 # tracer 13 - ZOO2N 
  PTRACERS_names(13)='ZOO2N',
  PTRACERS_units(13)='mmol N/m^3'
@@ -118,7 +118,7 @@
  PTRACERS_diffKr(13)=1.E-5,
  PTRACERS_useGMRedi(13)=.FALSE. ,
  PTRACERS_useKPP(13)=.FALSE.  ,
- PTRACERS_initialFile(13)='input/loc1_ZOON_run83_janprof.bin',
+ PTRACERS_initialFile(13)='../input/input/loc1_ZOON_run83_janprof.bin',
 # tracer 14 - ZOO2Fe
  PTRACERS_names(14)='ZOO2Fe',
  PTRACERS_units(14)='mmol Fe/m^3'
@@ -127,7 +127,7 @@
  PTRACERS_diffKr(14)=1.E-5,
  PTRACERS_useGMRedi(14)=.FALSE. ,
  PTRACERS_useKPP(14)=.FALSE.  ,
- PTRACERS_initialFile(14)='input/loc1_ZOOFe_run83_janprof.bin',
+ PTRACERS_initialFile(14)='../input/input/loc1_ZOOFe_run83_janprof.bin',
 # tracer 15 - ZOO2Si
  PTRACERS_names(15)='ZOO2Si',
  PTRACERS_units(15)='mmol Si/m^3'
@@ -136,7 +136,7 @@
  PTRACERS_diffKr(15)=1.E-5,
  PTRACERS_useGMRedi(15)=.FALSE. ,
  PTRACERS_useKPP(15)=.FALSE.  ,
- PTRACERS_initialFile(15)='input/loc1_ZOOSi_run83_janprof.bin',
+ PTRACERS_initialFile(15)='../input/input/loc1_ZOOSi_run83_janprof.bin',
 # tracer 16 - POP
  PTRACERS_names(16)='POP',
  PTRACERS_units(16)='mmol P/m^3',
@@ -145,7 +145,7 @@
  PTRACERS_diffKr(16)=1.E-5,
  PTRACERS_useGMRedi(16)=.FALSE. ,
  PTRACERS_useKPP(16)=.FALSE.  ,
- PTRACERS_initialFile(16)='input/loc1_POP_run83_janprof.bin',
+ PTRACERS_initialFile(16)='../input/input/loc1_POP_run83_janprof.bin',
 # tracer 17 - PON   
  PTRACERS_names(17)='PON',
  PTRACERS_units(17)='mmol N/m^3',
@@ -154,7 +154,7 @@
  PTRACERS_diffKr(17)=1.E-5,
  PTRACERS_useGMRedi(17)=.FALSE. ,
  PTRACERS_useKPP(17)=.FALSE.  ,
- PTRACERS_initialFile(17)='input/loc1_PON_run83_janprof.bin',
+ PTRACERS_initialFile(17)='../input/input/loc1_PON_run83_janprof.bin',
 # tracer 18 - POFe
  PTRACERS_names(18)='POFe',
  PTRACERS_units(18)='mmol Fe/m^3'
@@ -163,7 +163,7 @@
  PTRACERS_diffKr(18)=1.E-5,
  PTRACERS_useGMRedi(18)=.FALSE. ,
  PTRACERS_useKPP(18)=.FALSE.  ,
- PTRACERS_initialFile(18)='input/loc1_POFe_run83_janprof.bin',
+ PTRACERS_initialFile(18)='../input/input/loc1_POFe_run83_janprof.bin',
 # tracer 19 - POSi   
  PTRACERS_names(19)='POSi',
  PTRACERS_units(19)='mmol Si/m^3'
@@ -172,7 +172,7 @@
  PTRACERS_diffKr(19)=1.E-5,
  PTRACERS_useGMRedi(19)=.FALSE. ,
  PTRACERS_useKPP(19)=.FALSE.  ,
- PTRACERS_initialFile(19)='input/loc1_POSi_run83_janprof.bin',
+ PTRACERS_initialFile(19)='../input/input/loc1_POSi_run83_janprof.bin',
 # tracer 20 - NH4      
  PTRACERS_names(20)='NH4',
  PTRACERS_units(20)='mmol N/m^3'
@@ -181,7 +181,7 @@
  PTRACERS_diffKr(20)=1.E-5,
  PTRACERS_useGMRedi(20)=.FALSE. ,
  PTRACERS_useKPP(20)=.FALSE.  ,
- PTRACERS_initialFile(20)='input/loc1_NH4_run83_janprof.bin',
+ PTRACERS_initialFile(20)='../input/input/loc1_NH4_run83_janprof.bin',
 # tracer 21 - NO2
  PTRACERS_names(21)='NO2',
  PTRACERS_units(21)='mmol N/m^3'
@@ -190,7 +190,7 @@
  PTRACERS_diffKr(21)=1.E-5,
  PTRACERS_useGMRedi(21)=.FALSE. ,
  PTRACERS_useKPP(21)=.FALSE.  ,
- PTRACERS_initialFile(21)='input/loc1_NO2_run83_janprof.bin',
+ PTRACERS_initialFile(21)='../input/input/loc1_NO2_run83_janprof.bin',
 # tracer 22 - PHYT01
  PTRACERS_names(22)='Phy1',
  PTRACERS_units(22)='mmol P/m^3'
@@ -199,7 +199,7 @@
  PTRACERS_diffKr(22)=1.E-5,
  PTRACERS_useGMRedi(22)=.FALSE. ,
  PTRACERS_useKPP(22)=.FALSE.  ,
- PTRACERS_initialFile(22)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(22)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 23 - PHYT02
  PTRACERS_names(23)='Phy2',
  PTRACERS_units(23)='mmol P/m^3'
@@ -208,7 +208,7 @@
  PTRACERS_diffKr(23)=1.E-5,
  PTRACERS_useGMRedi(23)=.FALSE. ,
  PTRACERS_useKPP(23)=.FALSE.  ,
- PTRACERS_initialFile(23)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(23)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 24 - PHYT03
  PTRACERS_names(24)='Phy3',
  PTRACERS_units(24)='mmol P/m^3'
@@ -217,7 +217,7 @@
  PTRACERS_diffKr(24)=1.E-5,
  PTRACERS_useGMRedi(24)=.FALSE. ,
  PTRACERS_useKPP(24)=.FALSE.  ,
- PTRACERS_initialFile(24)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(24)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 25 - PHYT04
  PTRACERS_names(25)='Phy4',
  PTRACERS_units(25)='mmol P/m^3'
@@ -226,7 +226,7 @@
  PTRACERS_diffKr(25)=1.E-5,
  PTRACERS_useGMRedi(25)=.FALSE. ,
  PTRACERS_useKPP(25)=.FALSE.  ,
- PTRACERS_initialFile(25)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(25)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 26 - PHYT05
  PTRACERS_names(26)='Phy5',
  PTRACERS_units(26)='mmol P/m^3'
@@ -235,7 +235,7 @@
  PTRACERS_diffKr(26)=1.E-5,
  PTRACERS_useGMRedi(26)=.FALSE. ,
  PTRACERS_useKPP(26)=.FALSE.  ,
- PTRACERS_initialFile(26)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(26)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 27 - PHYT06
  PTRACERS_names(27)='Phy6',
  PTRACERS_units(27)='mmol P/m^3'
@@ -244,7 +244,7 @@
  PTRACERS_diffKr(27)=1.E-5,
  PTRACERS_useGMRedi(27)=.FALSE. ,
  PTRACERS_useKPP(27)=.FALSE.  ,
- PTRACERS_initialFile(27)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(27)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 28 - PHYT07
  PTRACERS_names(28)='Phy7',
  PTRACERS_units(28)='mmol P/m^3'
@@ -253,7 +253,7 @@
  PTRACERS_diffKr(28)=1.E-5,
  PTRACERS_useGMRedi(28)=.FALSE. ,
  PTRACERS_useKPP(28)=.FALSE.  ,
- PTRACERS_initialFile(28)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(28)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 29 - PHYT08
  PTRACERS_names(29)='Phy8',
  PTRACERS_units(29)='mmol P/m^3'
@@ -262,7 +262,7 @@
  PTRACERS_diffKr(29)=1.E-5,
  PTRACERS_useGMRedi(29)=.FALSE. ,
  PTRACERS_useKPP(29)=.FALSE.  ,
- PTRACERS_initialFile(29)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(29)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 30 - PHYT09
  PTRACERS_names(30)='Phy9',
  PTRACERS_units(30)='mmol P/m^3'
@@ -271,7 +271,7 @@
  PTRACERS_diffKr(30)=1.E-5,
  PTRACERS_useGMRedi(30)=.FALSE. ,
  PTRACERS_useKPP(30)=.FALSE.  ,
- PTRACERS_initialFile(30)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(30)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 31 - PHYT10
  PTRACERS_names(31)='Phy10',
  PTRACERS_units(31)='mmol P/m^3'
@@ -280,7 +280,7 @@
  PTRACERS_diffKr(31)=1.E-5,
  PTRACERS_useGMRedi(31)=.FALSE. ,
  PTRACERS_useKPP(31)=.FALSE.  ,
- PTRACERS_initialFile(31)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(31)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 32 - PHYT11
  PTRACERS_names(32)='Phy11',
  PTRACERS_units(32)='mmol P/m^3'
@@ -289,7 +289,7 @@
  PTRACERS_diffKr(32)=1.E-5,
  PTRACERS_useGMRedi(32)=.FALSE. ,
  PTRACERS_useKPP(32)=.FALSE.  ,
- PTRACERS_initialFile(32)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(32)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 0 - PHYT12
  PTRACERS_names(33)='Phy12',
  PTRACERS_units(33)='mmol P/m^3'
@@ -298,7 +298,7 @@
  PTRACERS_diffKr(33)=1.E-5,
  PTRACERS_useGMRedi(33)=.FALSE. ,
  PTRACERS_useKPP(33)=.FALSE.  ,
- PTRACERS_initialFile(33)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(33)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 34 - PHYT13
  PTRACERS_names(34)='Phy13',
  PTRACERS_units(34)='mmol P/m^3'
@@ -307,7 +307,7 @@
  PTRACERS_diffKr(34)=1.E-5,
  PTRACERS_useGMRedi(34)=.FALSE. ,
  PTRACERS_useKPP(34)=.FALSE.  ,
- PTRACERS_initialFile(34)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(34)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 35 - PHYT14
  PTRACERS_names(35)='Phy14',
  PTRACERS_units(35)='mmol P/m^3'
@@ -316,7 +316,7 @@
  PTRACERS_diffKr(35)=1.E-5,
  PTRACERS_useGMRedi(35)=.FALSE. ,
  PTRACERS_useKPP(35)=.FALSE.  ,
- PTRACERS_initialFile(35)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(35)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 36 - PHYT15
  PTRACERS_names(36)='Phy15',
  PTRACERS_units(36)='mmol P/m^3'
@@ -325,7 +325,7 @@
  PTRACERS_diffKr(36)=1.E-5,
  PTRACERS_useGMRedi(36)=.FALSE. ,
  PTRACERS_useKPP(36)=.FALSE.  ,
- PTRACERS_initialFile(36)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(36)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 37 - PHYT16
  PTRACERS_names(37)='Phy16',
  PTRACERS_units(37)='mmol P/m^3'
@@ -334,7 +334,7 @@
  PTRACERS_diffKr(37)=1.E-5,
  PTRACERS_useGMRedi(37)=.FALSE. ,
  PTRACERS_useKPP(37)=.FALSE.  ,
- PTRACERS_initialFile(37)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(37)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 38 - PHYT17
  PTRACERS_names(38)='Phy17',
  PTRACERS_units(38)='mmol P/m^3'
@@ -343,7 +343,7 @@
  PTRACERS_diffKr(38)=1.E-5,
  PTRACERS_useGMRedi(38)=.FALSE. ,
  PTRACERS_useKPP(38)=.FALSE.  ,
- PTRACERS_initialFile(38)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(38)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 39 - PHYT18
  PTRACERS_names(39)='Phy18',
  PTRACERS_units(39)='mmol P/m^3'
@@ -352,7 +352,7 @@
  PTRACERS_diffKr(39)=1.E-5,
  PTRACERS_useGMRedi(39)=.FALSE. ,
  PTRACERS_useKPP(39)=.FALSE.  ,
- PTRACERS_initialFile(39)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(39)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 40 - PHYT19
  PTRACERS_names(40)='Phy19',
  PTRACERS_units(40)='mmol P/m^3'
@@ -361,7 +361,7 @@
  PTRACERS_diffKr(40)=1.E-5,
  PTRACERS_useGMRedi(40)=.FALSE. ,
  PTRACERS_useKPP(40)=.FALSE.  ,
- PTRACERS_initialFile(40)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(40)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 41 - PHYT20
  PTRACERS_names(41)='Phy20',
  PTRACERS_units(41)='mmol P/m^3'
@@ -370,7 +370,7 @@
  PTRACERS_diffKr(41)=1.E-5,
  PTRACERS_useGMRedi(41)=.FALSE. ,
  PTRACERS_useKPP(41)=.FALSE.  ,
- PTRACERS_initialFile(41)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(41)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 42 - PHYT21
  PTRACERS_names(42)='Phy21',
  PTRACERS_units(42)='mmol P/m^3'
@@ -379,7 +379,7 @@
  PTRACERS_diffKr(42)=1.E-5,
  PTRACERS_useGMRedi(42)=.FALSE. ,
  PTRACERS_useKPP(42)=.FALSE.  ,
- PTRACERS_initialFile(42)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(42)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 43 - PHYT22
  PTRACERS_names(43)='Phy22',
  PTRACERS_units(43)='mmol P/m^3'
@@ -388,7 +388,7 @@
  PTRACERS_diffKr(43)=1.E-5,
  PTRACERS_useGMRedi(43)=.FALSE. ,
  PTRACERS_useKPP(43)=.FALSE.  ,
- PTRACERS_initialFile(43)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(43)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 44 - PHYT23
  PTRACERS_names(44)='Phy23',
  PTRACERS_units(44)='mmol P/m^3'
@@ -397,7 +397,7 @@
  PTRACERS_diffKr(44)=1.E-5,
  PTRACERS_useGMRedi(44)=.FALSE. ,
  PTRACERS_useKPP(44)=.FALSE.  ,
- PTRACERS_initialFile(44)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(44)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 45 - PHYT24
  PTRACERS_names(45)='Phy24',
  PTRACERS_units(45)='mmol P/m^3'
@@ -406,7 +406,7 @@
  PTRACERS_diffKr(45)=1.E-5,
  PTRACERS_useGMRedi(45)=.FALSE. ,
  PTRACERS_useKPP(45)=.FALSE.  ,
- PTRACERS_initialFile(45)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(45)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 46 - PHYT25
  PTRACERS_names(46)='Phy25',
  PTRACERS_units(46)='mmol P/m^3'
@@ -415,7 +415,7 @@
  PTRACERS_diffKr(46)=1.E-5,
  PTRACERS_useGMRedi(46)=.FALSE. ,
  PTRACERS_useKPP(46)=.FALSE.  ,
- PTRACERS_initialFile(46)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(46)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 47 - PHYT26
  PTRACERS_names(47)='Phy26',
  PTRACERS_units(47)='mmol P/m^3'
@@ -424,7 +424,7 @@
  PTRACERS_diffKr(47)=1.E-5,
  PTRACERS_useGMRedi(47)=.FALSE. ,
  PTRACERS_useKPP(47)=.FALSE.  ,
- PTRACERS_initialFile(47)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(47)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 48 - PHYT27
  PTRACERS_names(48)='Phy27',
  PTRACERS_units(48)='mmol P/m^3'
@@ -433,7 +433,7 @@
  PTRACERS_diffKr(48)=1.E-5,
  PTRACERS_useGMRedi(48)=.FALSE. ,
  PTRACERS_useKPP(48)=.FALSE.  ,
- PTRACERS_initialFile(48)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(48)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 49 - PHYT28
  PTRACERS_names(49)='Phy28',
  PTRACERS_units(49)='mmol P/m^3'
@@ -442,7 +442,7 @@
  PTRACERS_diffKr(49)=1.E-5,
  PTRACERS_useGMRedi(49)=.FALSE. ,
  PTRACERS_useKPP(49)=.FALSE.  ,
- PTRACERS_initialFile(49)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(49)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 50 - PHYT29
  PTRACERS_names(50)='Phy29',
  PTRACERS_units(50)='mmol P/m^3'
@@ -451,7 +451,7 @@
  PTRACERS_diffKr(50)=1.E-5,
  PTRACERS_useGMRedi(50)=.FALSE. ,
  PTRACERS_useKPP(50)=.FALSE.  ,
- PTRACERS_initialFile(50)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(50)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 51 - PHY30
  PTRACERS_names(51)='Phy30',
  PTRACERS_units(51)='mmol P/m^3'
@@ -460,7 +460,7 @@
  PTRACERS_diffKr(51)=1.E-5,
  PTRACERS_useGMRedi(51)=.FALSE. ,
  PTRACERS_useKPP(51)=.FALSE.  ,
- PTRACERS_initialFile(51)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(51)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 52 - PHY31
  PTRACERS_names(52)='Phy31',
  PTRACERS_units(52)='mmol P/m^3'
@@ -469,7 +469,7 @@
  PTRACERS_diffKr(52)=1.E-5,
  PTRACERS_useGMRedi(52)=.FALSE. ,
  PTRACERS_useKPP(52)=.FALSE.  ,
- PTRACERS_initialFile(52)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(52)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 53 - PHY32
  PTRACERS_names(53)='Phy32',
  PTRACERS_units(53)='mmol P/m^3'
@@ -478,7 +478,7 @@
  PTRACERS_diffKr(53)=1.E-5,
  PTRACERS_useGMRedi(53)=.FALSE. ,
  PTRACERS_useKPP(53)=.FALSE.  ,
- PTRACERS_initialFile(53)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(53)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 54 - PHY33
  PTRACERS_names(54)='Phy33',
  PTRACERS_units(54)='mmol P/m^3'
@@ -487,7 +487,7 @@
  PTRACERS_diffKr(54)=1.E-5,
  PTRACERS_useGMRedi(54)=.FALSE. ,
  PTRACERS_useKPP(54)=.FALSE.  ,
- PTRACERS_initialFile(54)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(54)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 55 - PHY34
  PTRACERS_names(55)='Phy34',
  PTRACERS_units(55)='mmol P/m^3'
@@ -496,7 +496,7 @@
  PTRACERS_diffKr(55)=1.E-5,
  PTRACERS_useGMRedi(55)=.FALSE. ,
  PTRACERS_useKPP(55)=.FALSE.  ,
- PTRACERS_initialFile(55)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(55)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 56 - PHY35
  PTRACERS_names(56)='Phy35',
  PTRACERS_units(56)='mmol P/m^3'
@@ -505,7 +505,7 @@
  PTRACERS_diffKr(56)=1.E-5,
  PTRACERS_useGMRedi(56)=.FALSE. ,
  PTRACERS_useKPP(56)=.FALSE.  ,
- PTRACERS_initialFile(56)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(56)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 57 - PHY36
  PTRACERS_names(57)='Phy36',
  PTRACERS_units(57)='mmol P/m^3'
@@ -514,7 +514,7 @@
  PTRACERS_diffKr(57)=1.E-5,
  PTRACERS_useGMRedi(57)=.FALSE. ,
  PTRACERS_useKPP(57)=.FALSE.  ,
- PTRACERS_initialFile(57)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(57)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 58 - PHY37
  PTRACERS_names(58)='Phy37',
  PTRACERS_units(58)='mmol P/m^3'
@@ -523,7 +523,7 @@
  PTRACERS_diffKr(58)=1.E-5,
  PTRACERS_useGMRedi(58)=.FALSE. ,
  PTRACERS_useKPP(58)=.FALSE.  ,
- PTRACERS_initialFile(58)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(58)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 59 - PHY38
  PTRACERS_names(59)='Phy38',
  PTRACERS_units(59)='mmol P/m^3'
@@ -532,7 +532,7 @@
  PTRACERS_diffKr(59)=1.E-5,
  PTRACERS_useGMRedi(59)=.FALSE. ,
  PTRACERS_useKPP(59)=.FALSE.  ,
- PTRACERS_initialFile(59)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(59)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 60 - PHY39
  PTRACERS_names(60)='Phy39',
  PTRACERS_units(60)='mmol P/m^3'
@@ -541,7 +541,7 @@
  PTRACERS_diffKr(60)=1.E-5,
  PTRACERS_useGMRedi(60)=.FALSE. ,
  PTRACERS_useKPP(60)=.FALSE.  ,
- PTRACERS_initialFile(60)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(60)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 61 - PHY40
  PTRACERS_names(61)='Phy40',
  PTRACERS_units(61)='mmol P/m^3'
@@ -550,7 +550,7 @@
  PTRACERS_diffKr(61)=1.E-5,
  PTRACERS_useGMRedi(61)=.FALSE. ,
  PTRACERS_useKPP(61)=.FALSE.  ,
- PTRACERS_initialFile(61)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(61)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 62 - PHY41
  PTRACERS_names(62)='Phy41',
  PTRACERS_units(62)='mmol P/m^3'
@@ -559,7 +559,7 @@
  PTRACERS_diffKr(62)=1.E-5,
  PTRACERS_useGMRedi(62)=.FALSE. ,
  PTRACERS_useKPP(62)=.FALSE.  ,
- PTRACERS_initialFile(62)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(62)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 63 - PHY42
  PTRACERS_names(63)='Phy42',
  PTRACERS_units(63)='mmol P/m^3'
@@ -568,7 +568,7 @@
  PTRACERS_diffKr(63)=1.E-5,
  PTRACERS_useGMRedi(63)=.FALSE. ,
  PTRACERS_useKPP(63)=.FALSE.  ,
- PTRACERS_initialFile(63)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(63)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 64 - PHY43
  PTRACERS_names(64)='Phy43',
  PTRACERS_units(64)='mmol P/m^3'
@@ -577,7 +577,7 @@
  PTRACERS_diffKr(64)=1.E-5,
  PTRACERS_useGMRedi(64)=.FALSE. ,
  PTRACERS_useKPP(64)=.FALSE.  ,
- PTRACERS_initialFile(64)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(64)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 65 - PHY44
  PTRACERS_names(65)='Phy44',
  PTRACERS_units(65)='mmol P/m^3'
@@ -586,7 +586,7 @@
  PTRACERS_diffKr(65)=1.E-5,
  PTRACERS_useGMRedi(65)=.FALSE. ,
  PTRACERS_useKPP(65)=.FALSE.  ,
- PTRACERS_initialFile(65)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(65)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 66 - PHY45
  PTRACERS_names(66)='Phy45',
  PTRACERS_units(66)='mmol P/m^3'
@@ -595,7 +595,7 @@
  PTRACERS_diffKr(66)=1.E-5,
  PTRACERS_useGMRedi(66)=.FALSE. ,
  PTRACERS_useKPP(66)=.FALSE.  ,
- PTRACERS_initialFile(66)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(66)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 67 - PHY46
  PTRACERS_names(67)='Phy46',
  PTRACERS_units(67)='mmol P/m^3'
@@ -604,7 +604,7 @@
  PTRACERS_diffKr(67)=1.E-5,
  PTRACERS_useGMRedi(67)=.FALSE. ,
  PTRACERS_useKPP(67)=.FALSE.  ,
- PTRACERS_initialFile(67)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(67)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 68 - PHY47
  PTRACERS_names(68)='Phy47',
  PTRACERS_units(68)='mmol P/m^3'
@@ -613,7 +613,7 @@
  PTRACERS_diffKr(68)=1.E-5,
  PTRACERS_useGMRedi(68)=.FALSE. ,
  PTRACERS_useKPP(68)=.FALSE.  ,
- PTRACERS_initialFile(68)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(68)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 69 - PHY48
  PTRACERS_names(69)='Phy48',
  PTRACERS_units(69)='mmol P/m^3'
@@ -622,7 +622,7 @@
  PTRACERS_diffKr(69)=1.E-5,
  PTRACERS_useGMRedi(69)=.FALSE. ,
  PTRACERS_useKPP(69)=.FALSE.  ,
- PTRACERS_initialFile(69)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(69)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 70 - PHY49
  PTRACERS_names(70)='Phy49',
  PTRACERS_units(70)='mmol P/m^3'
@@ -631,7 +631,7 @@
  PTRACERS_diffKr(70)=1.E-5,
  PTRACERS_useGMRedi(70)=.FALSE. ,
  PTRACERS_useKPP(70)=.FALSE.  ,
- PTRACERS_initialFile(70)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(70)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 71 - PHY50
  PTRACERS_names(71)='Phy50',
  PTRACERS_units(71)='mmol P/m^3'
@@ -640,7 +640,7 @@
  PTRACERS_diffKr(71)=1.E-5,
  PTRACERS_useGMRedi(71)=.FALSE. ,
  PTRACERS_useKPP(71)=.FALSE.  ,
- PTRACERS_initialFile(71)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(71)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 72 - PHY51
  PTRACERS_names(72)='Phy51',
  PTRACERS_units(72)='mmol P/m^3'
@@ -649,7 +649,7 @@
  PTRACERS_diffKr(72)=1.E-5,
  PTRACERS_useGMRedi(72)=.FALSE. ,
  PTRACERS_useKPP(72)=.FALSE.  ,
- PTRACERS_initialFile(72)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(72)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 73 - PHY52
  PTRACERS_names(73)='Phy52',
  PTRACERS_units(73)='mmol P/m^3'
@@ -658,7 +658,7 @@
  PTRACERS_diffKr(73)=1.E-5,
  PTRACERS_useGMRedi(73)=.FALSE. ,
  PTRACERS_useKPP(73)=.FALSE.  ,
- PTRACERS_initialFile(73)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(73)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 74 - PHY53
  PTRACERS_names(74)='Phy53',
  PTRACERS_units(74)='mmol P/m^3'
@@ -667,7 +667,7 @@
  PTRACERS_diffKr(74)=1.E-5,
  PTRACERS_useGMRedi(74)=.FALSE. ,
  PTRACERS_useKPP(74)=.FALSE.  ,
- PTRACERS_initialFile(74)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(74)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 75 - PHY54
  PTRACERS_names(75)='Phy54',
  PTRACERS_units(75)='mmol P/m^3'
@@ -676,7 +676,7 @@
  PTRACERS_diffKr(75)=1.E-5,
  PTRACERS_useGMRedi(75)=.FALSE. ,
  PTRACERS_useKPP(75)=.FALSE.  ,
- PTRACERS_initialFile(75)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(75)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 76 - PHY55
  PTRACERS_names(76)='Phy55',
  PTRACERS_units(76)='mmol P/m^3'
@@ -685,7 +685,7 @@
  PTRACERS_diffKr(76)=1.E-5,
  PTRACERS_useGMRedi(76)=.FALSE. ,
  PTRACERS_useKPP(76)=.FALSE.  ,
- PTRACERS_initialFile(76)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(76)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 77 - PHY56
  PTRACERS_names(77)='Phy56',
  PTRACERS_units(77)='mmol P/m^3'
@@ -694,7 +694,7 @@
  PTRACERS_diffKr(77)=1.E-5,
  PTRACERS_useGMRedi(77)=.FALSE. ,
  PTRACERS_useKPP(77)=.FALSE.  ,
- PTRACERS_initialFile(77)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(77)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 78 - PHY57
  PTRACERS_names(78)='Phy57',
  PTRACERS_units(78)='mmol P/m^3'
@@ -703,7 +703,7 @@
  PTRACERS_diffKr(78)=1.E-5,
  PTRACERS_useGMRedi(78)=.FALSE. ,
  PTRACERS_useKPP(78)=.FALSE.  ,
- PTRACERS_initialFile(78)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(78)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 79 - PHY58
  PTRACERS_names(79)='Phy58',
  PTRACERS_units(79)='mmol P/m^3'
@@ -712,7 +712,7 @@
  PTRACERS_diffKr(79)=1.E-5,
  PTRACERS_useGMRedi(79)=.FALSE. ,
  PTRACERS_useKPP(79)=.FALSE.  ,
- PTRACERS_initialFile(79)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(79)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 80 - PHY59
  PTRACERS_names(80)='Phy59',
  PTRACERS_units(80)='mmol P/m^3'
@@ -721,7 +721,7 @@
  PTRACERS_diffKr(80)=1.E-5,
  PTRACERS_useGMRedi(80)=.FALSE. ,
  PTRACERS_useKPP(80)=.FALSE.  ,
- PTRACERS_initialFile(80)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(80)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 81 - PHY60
  PTRACERS_names(81)='Phy60',
  PTRACERS_units(81)='mmol P/m^3'
@@ -730,7 +730,7 @@
  PTRACERS_diffKr(81)=1.E-5,
  PTRACERS_useGMRedi(81)=.FALSE. ,
  PTRACERS_useKPP(81)=.FALSE.  ,
- PTRACERS_initialFile(81)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(81)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 82 - PHY61
  PTRACERS_names(82)='Phy61',
  PTRACERS_units(82)='mmol P/m^3'
@@ -739,7 +739,7 @@
  PTRACERS_diffKr(82)=1.E-5,
  PTRACERS_useGMRedi(82)=.FALSE. ,
  PTRACERS_useKPP(82)=.FALSE.  ,
- PTRACERS_initialFile(82)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(82)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 83 - PHY62
  PTRACERS_names(83)='Phy62',
  PTRACERS_units(83)='mmol P/m^3'
@@ -748,7 +748,7 @@
  PTRACERS_diffKr(83)=1.E-5,
  PTRACERS_useGMRedi(83)=.FALSE. ,
  PTRACERS_useKPP(83)=.FALSE.  ,
- PTRACERS_initialFile(83)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(83)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 84 - PHY63
  PTRACERS_names(84)='Phy63',
  PTRACERS_units(84)='mmol P/m^3'
@@ -757,7 +757,7 @@
  PTRACERS_diffKr(84)=1.E-5,
  PTRACERS_useGMRedi(84)=.FALSE. ,
  PTRACERS_useKPP(84)=.FALSE.  ,
- PTRACERS_initialFile(84)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(84)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 85 - PHY64
  PTRACERS_names(85)='Phy64',
  PTRACERS_units(85)='mmol P/m^3'
@@ -766,7 +766,7 @@
  PTRACERS_diffKr(85)=1.E-5,
  PTRACERS_useGMRedi(85)=.FALSE. ,
  PTRACERS_useKPP(85)=.FALSE.  ,
- PTRACERS_initialFile(85)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(85)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 86 - PHY65
  PTRACERS_names(86)='Phy65',
  PTRACERS_units(86)='mmol P/m^3'
@@ -775,7 +775,7 @@
  PTRACERS_diffKr(86)=1.E-5,
  PTRACERS_useGMRedi(86)=.FALSE. ,
  PTRACERS_useKPP(86)=.FALSE.  ,
- PTRACERS_initialFile(86)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(86)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 87 - PHY66
  PTRACERS_names(87)='Phy66',
  PTRACERS_units(87)='mmol P/m^3'
@@ -784,7 +784,7 @@
  PTRACERS_diffKr(87)=1.E-5,
  PTRACERS_useGMRedi(87)=.FALSE. ,
  PTRACERS_useKPP(87)=.FALSE.  ,
- PTRACERS_initialFile(87)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(87)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 88 - PHY67
  PTRACERS_names(88)='Phy67',
  PTRACERS_units(88)='mmol P/m^3'
@@ -793,7 +793,7 @@
  PTRACERS_diffKr(88)=1.E-5,
  PTRACERS_useGMRedi(88)=.FALSE. ,
  PTRACERS_useKPP(88)=.FALSE.  ,
- PTRACERS_initialFile(88)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(88)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 89 - PHY68
  PTRACERS_names(89)='Phy68',
  PTRACERS_units(89)='mmol P/m^3'
@@ -802,7 +802,7 @@
  PTRACERS_diffKr(89)=1.E-5,
  PTRACERS_useGMRedi(89)=.FALSE. ,
  PTRACERS_useKPP(89)=.FALSE.  ,
- PTRACERS_initialFile(89)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(89)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 90 - PHY69
  PTRACERS_names(90)='Phy69',
  PTRACERS_units(90)='mmol P/m^3'
@@ -811,7 +811,7 @@
  PTRACERS_diffKr(90)=1.E-5,
  PTRACERS_useGMRedi(90)=.FALSE. ,
  PTRACERS_useKPP(90)=.FALSE.  ,
- PTRACERS_initialFile(90)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(90)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 91 - PHY70
  PTRACERS_names(91)='Phy70',
  PTRACERS_units(91)='mmol P/m^3'
@@ -820,7 +820,7 @@
  PTRACERS_diffKr(91)=1.E-5,
  PTRACERS_useGMRedi(91)=.FALSE. ,
  PTRACERS_useKPP(91)=.FALSE.  ,
- PTRACERS_initialFile(91)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(91)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 92 - PHY71
  PTRACERS_names(92)='Phy71',
  PTRACERS_units(92)='mmol P/m^3'
@@ -829,7 +829,7 @@
  PTRACERS_diffKr(92)=1.E-5,
  PTRACERS_useGMRedi(92)=.FALSE. ,
  PTRACERS_useKPP(92)=.FALSE.  ,
- PTRACERS_initialFile(92)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(92)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 93 - PHY72
  PTRACERS_names(93)='Phy72',
  PTRACERS_units(93)='mmol P/m^3'
@@ -838,7 +838,7 @@
  PTRACERS_diffKr(93)=1.E-5,
  PTRACERS_useGMRedi(93)=.FALSE. ,
  PTRACERS_useKPP(93)=.FALSE.  ,
- PTRACERS_initialFile(93)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(93)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 94 - PHY73
  PTRACERS_names(94)='Phy73',
  PTRACERS_units(94)='mmol P/m^3'
@@ -847,7 +847,7 @@
  PTRACERS_diffKr(94)=1.E-5,
  PTRACERS_useGMRedi(94)=.FALSE. ,
  PTRACERS_useKPP(94)=.FALSE.  ,
- PTRACERS_initialFile(94)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(94)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 95 - PHY74
  PTRACERS_names(95)='Phy74',
  PTRACERS_units(95)='mmol P/m^3'
@@ -856,7 +856,7 @@
  PTRACERS_diffKr(95)=1.E-5,
  PTRACERS_useGMRedi(95)=.FALSE. ,
  PTRACERS_useKPP(95)=.FALSE.  ,
- PTRACERS_initialFile(95)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(95)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 96 - PHY75
  PTRACERS_names(96)='Phy75',
  PTRACERS_units(96)='mmol P/m^3'
@@ -865,7 +865,7 @@
  PTRACERS_diffKr(96)=1.E-5,
  PTRACERS_useGMRedi(96)=.FALSE. ,
  PTRACERS_useKPP(96)=.FALSE.  ,
- PTRACERS_initialFile(96)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(96)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 97 - PHY76
  PTRACERS_names(97)='Phy76',
  PTRACERS_units(97)='mmol P/m^3'
@@ -874,7 +874,7 @@
  PTRACERS_diffKr(97)=1.E-5,
  PTRACERS_useGMRedi(97)=.FALSE. ,
  PTRACERS_useKPP(97)=.FALSE.  ,
- PTRACERS_initialFile(97)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(97)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 98 - PHY77
  PTRACERS_names(98)='Phy77',
  PTRACERS_units(98)='mmol P/m^3'
@@ -883,7 +883,7 @@
  PTRACERS_diffKr(98)=1.E-5,
  PTRACERS_useGMRedi(98)=.FALSE. ,
  PTRACERS_useKPP(98)=.FALSE.  ,
- PTRACERS_initialFile(98)='input/loc1_biomass_run83_janprof.bin',
+ PTRACERS_initialFile(98)='../input/input/loc1_biomass_run83_janprof.bin',
 # tracer 99 - PHY78
  PTRACERS_names(99)='Phy78',
  PTRACERS_units(99)='mmol P/m^3'
@@ -892,5 +892,5 @@
  PTRACERS_diffKr(99)=1.E-5,
  PTRACERS_useGMRedi(99)=.FALSE. ,
  PTRACERS_useKPP(99)=.FALSE.  ,
- PTRACERS_initialFile(99)='input/loc1_biomass_run83_janprof.bin',
-&
+ PTRACERS_initialFile(99)='../input/input/loc1_biomass_run83_janprof.bin',
+ &

@@ -88,12 +88,12 @@ thetamin=335,
 # Data Files
 # **********
 &PARM05
-bathyFile=       'input/bathyneg.bin',
-hydrogThetaFile= 'input/loc1_temp_janprof.bin',
-hydrogSaltFile=  'input/salt_uniform.bin',
+bathyFile=       '../input/input/bathyneg.bin',
+hydrogThetaFile= '../input/input/loc1_temp_janprof.bin',
+hydrogSaltFile=  '../input/input/salt_uniform.bin',
 zonalWindFile=   '',
 meridWindFile=   '',
-thetaClimFile=   'input/loc1_temp_monsurf.bin',
+thetaClimFile=   '../input/input/loc1_temp_monsurf.bin',
 saltClimFile=    '',
 surfQFile=       '',
 EmPmRFile=       '',
