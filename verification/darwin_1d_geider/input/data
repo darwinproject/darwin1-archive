@@ -80,8 +80,8 @@ usingSphericalPolarGrid=.TRUE.,
 delX=1*1.E0,
 delY=1*1.E0,
 delZ=14*10, 5*15, 4*20, 2*50, 100, 2*150, 200, 300, 3*400, 2*500,
-phimin=-18.,
-thetamin=335,
+xgOrigin=335,
+ygOrigin=-18.,
 /
 
 # **********
