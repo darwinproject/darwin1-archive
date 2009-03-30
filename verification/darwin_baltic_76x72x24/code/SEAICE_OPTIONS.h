@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/SEAICE_OPTIONS.h,v 1.4 2008/03/12 18:10:51 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/SEAICE_OPTIONS.h,v 1.5 2009/03/30 18:01:47 jahn Exp $
 C $Name:  $
 
 C     /==========================================================\
@@ -79,6 +79,8 @@ C     allow the truncated ellipse rheology (runtime flag SEAICEuseTEM)
 
 C--   When set use MAX_HEFF to cap sea ice thickness in seaice_growth
 #undef SEAICE_CAP_HEFF
+
+#undef  SEAICE_OLD_AND_BAD_DISCRETIZATION
 
 #endif /* SEAICE_OPTIONS_H */
 
