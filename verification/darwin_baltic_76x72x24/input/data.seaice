@@ -14,7 +14,7 @@
       SEAICE_freeze      = -1.7348,
       MIN_ATEMP          = -40.,
       MIN_TICE           = -40.,
-      SEAICE_clipVelocities = .TRUE.,
+#      SEAICE_clipVelocities = .TRUE.,
       SEAICEadvSalt      = .FALSE.,
       SEAICEadvAge       = .FALSE.,
       SEAICEadvSnow      = .TRUE.,
