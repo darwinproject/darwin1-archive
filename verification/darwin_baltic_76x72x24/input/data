@@ -120,7 +120,8 @@
 #pChkptFreq=31536000.,
  pChkptFreq=2678400.,
  chkptFreq=2592000.,
- tauSaltClimRelax = 8722203.,
+#now in data.exf:
+#tauSaltClimRelax = 8722203.,
  monitorFreq=1200.,
 #diagFreq=1200.,
  forcing_In_AB = .FALSE.,

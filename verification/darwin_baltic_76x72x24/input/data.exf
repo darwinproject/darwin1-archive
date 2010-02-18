@@ -53,6 +53,7 @@
  lwdownperiod      = 21600.0,
 #
  climsssperiod     = -12.,
+ climsssTauRelax   = 8722203.,
  &
 #
  &EXF_NML_03
