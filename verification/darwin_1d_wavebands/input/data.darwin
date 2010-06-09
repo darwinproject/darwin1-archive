@@ -7,3 +7,5 @@
  darwin_surfacespecFile='surfspec_13amt6.dat',
  darwin_acdomFile='aCDOM13amtVK2006.dat',
  /
+ &DARWIN_SPECTRAL_PARM
+ /
