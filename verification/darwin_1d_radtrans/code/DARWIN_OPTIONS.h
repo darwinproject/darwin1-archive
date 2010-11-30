@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_radtrans/code/DARWIN_OPTIONS.h,v 1.1 2010/11/30 18:25:31 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_radtrans/code/DARWIN_OPTIONS.h,v 1.2 2010/11/30 18:50:38 jahn Exp $
 C $Name:  $
 
 #ifndef DARWIN_OPTIONS_H
@@ -31,6 +31,7 @@ CEOP
 #define DAR_RADTRANS
 #define DAR_RADTRANS_USE_MODEL_CALENDAR
 #define DAR_RADTRANS_ITERATIVE
+#undef  DAR_NONSPECTRAL_BACKSCATTERING_RATIO
 
 #undef  RELAX_NUTS
 #undef  FLUX_NUTS
