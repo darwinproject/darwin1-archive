@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_wavebands/code/DARWIN_OPTIONS.h,v 1.1 2009/02/27 19:04:27 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_wavebands/code/DARWIN_OPTIONS.h,v 1.2 2010/12/17 00:36:44 jahn Exp $
 C $Name:  $
 
 #ifndef DARWIN_OPTIONS_H
@@ -26,6 +26,14 @@ CEOP
 #undef  ALLOW_MUTANTS
 #define PORT_RAND
 #undef OLDSEED
+
+#undef NOTEMP
+#define TEMP_VERSION 1
+#define TEMP_RANGE
+
+#undef TWO_SPECIES_SETUP
+#undef NINE_SPECIES_SETUP
+
 #define GEIDER
 
 c ANNA turn wavebands on/off
@@ -36,6 +44,19 @@ c#define WAVEBANDS
 #undef  DAR_DIAG_RSTAR
 #undef  DAR_DIAG_DIVER
 
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+C dependencies
+c if two or nine species setup we don't want specific temperature ranges
+#ifdef  TWO_SPECIES_SETUP
+#undef TEMP_RANGE
+#endif
+#ifdef  NINE_SPECIES_SETUP
+#undef TEMP_RANGE
+#endif
 
+#ifdef DAR_DIAG_CHL
+#define ALLOW_PAR_DAY
+#endif
+ 
 #endif /* ALLOW_DARWIN */
 #endif /* DARWIN_OPTIONS_H */
