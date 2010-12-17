@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_radtrans/code/DARWIN_OPTIONS.h,v 1.3 2010/12/17 00:36:43 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_radtrans/code/DARWIN_OPTIONS.h,v 1.4 2010/12/17 21:20:29 jahn Exp $
 C $Name:  $
 
 #ifndef DARWIN_OPTIONS_H
@@ -50,6 +50,7 @@ CEOP
 #define DAR_DIAG_ACDOM
 #define DAR_DIAG_ABSORP
 #define DAR_DIAG_SCATTER
+#define DAR_DIAG_PART_SCATTER
 #define DAR_DIAG_IRR
 
 C diagnostic chlorophyll
