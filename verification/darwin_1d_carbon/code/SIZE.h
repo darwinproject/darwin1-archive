@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_carbon/code/SIZE.h,v 1.1 2011/04/07 20:42:57 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_carbon/code/SIZE.h,v 1.2 2011/04/07 20:55:14 jahn Exp $
 C $Name:  $
 
 C
