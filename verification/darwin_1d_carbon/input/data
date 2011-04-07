@@ -88,12 +88,12 @@ ygOrigin=-45.,
 # Data Files
 # **********
 &PARM05
-bathyFile=       'input/bathyneg.bin',
-hydrogThetaFile= 'input/loc1_temp_janprof.bin',
-hydrogSaltFile=  'input/salt_uniform.bin',
-zonalWindFile=   'input/loc1_taux_monsurf.bin',
-meridWindFile=   'input/loc1_tauy_monsurf.bin',
-thetaClimFile=   'input/loc1_temp_monsurf.bin',
+bathyFile=       '../input/input/bathyneg.bin',
+hydrogThetaFile= '../input/input/loc1_temp_janprof.bin',
+hydrogSaltFile=  '../input/input/salt_uniform.bin',
+zonalWindFile=   '../input/input/loc1_taux_monsurf.bin',
+meridWindFile=   '../input/input/loc1_tauy_monsurf.bin',
+thetaClimFile=   '../input/input/loc1_temp_monsurf.bin',
 saltClimFile=    '',
 surfQFile=       '',
 EmPmRFile=       '',

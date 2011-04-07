@@ -5,10 +5,9 @@
 (PID.TID 0000.0001) // ======================================================
 (PID.TID 0000.0001) // execution environment starting up...
 (PID.TID 0000.0001) 
-(PID.TID 0000.0001) // MITgcmUV version:  checkpoint62v
-(PID.TID 0000.0001) // Build user:        stephd
-(PID.TID 0000.0001) // Build host:        compute-3-12.local
-(PID.TID 0000.0001) // Build date:        Thu Apr  7 10:19:31 EDT 2011
+(PID.TID 0000.0001) // Build user:        jahn
+(PID.TID 0000.0001) // Build host:        saramago.mit.edu
+(PID.TID 0000.0001) // Build date:        Thu Apr  7 16:25:59 EDT 2011
 (PID.TID 0000.0001) 
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) // Execution Environment parameter file "eedata"
@@ -168,12 +167,12 @@
 (PID.TID 0000.0001) ># Data Files
 (PID.TID 0000.0001) ># **********
 (PID.TID 0000.0001) >&PARM05
-(PID.TID 0000.0001) >bathyFile=       'input/bathyneg.bin',
-(PID.TID 0000.0001) >hydrogThetaFile= 'input/loc1_temp_janprof.bin',
-(PID.TID 0000.0001) >hydrogSaltFile=  'input/salt_uniform.bin',
-(PID.TID 0000.0001) >zonalWindFile=   'input/loc1_taux_monsurf.bin',
-(PID.TID 0000.0001) >meridWindFile=   'input/loc1_tauy_monsurf.bin',
-(PID.TID 0000.0001) >thetaClimFile=   'input/loc1_temp_monsurf.bin',
+(PID.TID 0000.0001) >bathyFile=       '../input/input/bathyneg.bin',
+(PID.TID 0000.0001) >hydrogThetaFile= '../input/input/loc1_temp_janprof.bin',
+(PID.TID 0000.0001) >hydrogSaltFile=  '../input/input/salt_uniform.bin',
+(PID.TID 0000.0001) >zonalWindFile=   '../input/input/loc1_taux_monsurf.bin',
+(PID.TID 0000.0001) >meridWindFile=   '../input/input/loc1_tauy_monsurf.bin',
+(PID.TID 0000.0001) >thetaClimFile=   '../input/input/loc1_temp_monsurf.bin',
 (PID.TID 0000.0001) >saltClimFile=    '',
 (PID.TID 0000.0001) >surfQFile=       '',
 (PID.TID 0000.0001) >EmPmRFile=       '',
@@ -204,6 +203,30 @@
 (PID.TID 0000.0001) > /
 (PID.TID 0000.0001) 
 (PID.TID 0000.0001)  PACKAGES_BOOT: finished reading data.pkg
+(PID.TID 0000.0001)  MNC_READPARMS: opening file 'data.mnc'
+(PID.TID 0000.0001)  OPEN_COPY_DATA_FILE: opening file data.mnc
+(PID.TID 0000.0001) // =======================================================
+(PID.TID 0000.0001) // Parameter file "data.mnc"
+(PID.TID 0000.0001) // =======================================================
+(PID.TID 0000.0001) ># Example "data.mnc" file
+(PID.TID 0000.0001) ># Lines beginning "#" are comments
+(PID.TID 0000.0001) > &MNC_01
+(PID.TID 0000.0001) ># mnc_echo_gvtypes=.FALSE.,
+(PID.TID 0000.0001) ># mnc_use_indir=.FALSE.,
+(PID.TID 0000.0001) > mnc_use_outdir=.TRUE.,
+(PID.TID 0000.0001) > mnc_outdir_str='dar1d_',
+(PID.TID 0000.0001) > mnc_outdir_date=.TRUE.,
+(PID.TID 0000.0001) > monitor_mnc=.FALSE.,
+(PID.TID 0000.0001) > snapshot_mnc=.TRUE.,
+(PID.TID 0000.0001) > timeave_mnc=.TRUE.,
+(PID.TID 0000.0001) > pickup_read_mnc=.FALSE.,
+(PID.TID 0000.0001) > pickup_write_mnc=.FALSE.,
+(PID.TID 0000.0001) > /
+(PID.TID 0000.0001) ># Note: Some systems use & as the
+(PID.TID 0000.0001) ># namelist terminator. Other systems
+(PID.TID 0000.0001) ># use a / character.
+(PID.TID 0000.0001) 
+(PID.TID 0000.0001)  MNC_READPARMS: finished reading data.mnc
 (PID.TID 0000.0001)  KPP_INIT: opening data.kpp
 (PID.TID 0000.0001)  OPEN_COPY_DATA_FILE: opening file data.kpp
 (PID.TID 0000.0001) // =======================================================
@@ -220,7 +243,7 @@
 (PID.TID 0000.0001) > kpp_tavefreq    = 2592000.
 (PID.TID 0000.0001) > Ricr            = 0.3559
 (PID.TID 0000.0001) > Riinfty         = 0.6998
-(PID.TID 0000.0001) > &
+(PID.TID 0000.0001) > /
 (PID.TID 0000.0001) >
 (PID.TID 0000.0001) 
 (PID.TID 0000.0001)  KPP_INIT: finished reading data.kpp
@@ -240,7 +263,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(1)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(1)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(1)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(1)='input/loc1_phos_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(1)='../input/input/loc1_phos_janprof.bin',
 (PID.TID 0000.0001) ># tracer 2 - nitrate
 (PID.TID 0000.0001) > PTRACERS_names(2)='NO3',
 (PID.TID 0000.0001) > PTRACERS_units(2)='mmol N/m^3',
@@ -249,7 +272,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(2)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(2)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(2)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(2)='input/loc1_nitr_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(2)='../input/input/loc1_nitr_janprof.bin',
 (PID.TID 0000.0001) ># tracer 3 - dissolved iron
 (PID.TID 0000.0001) > PTRACERS_names(3)='FeT',
 (PID.TID 0000.0001) > PTRACERS_units(3)='mmol Fe/m^3',
@@ -258,7 +281,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(3)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(3)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(3)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(3)='input/fet_uniform.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(3)='../input/input/fet_uniform.bin',
 (PID.TID 0000.0001) ># tracer 4 - silicic acid
 (PID.TID 0000.0001) > PTRACERS_names(4)='SiO2',
 (PID.TID 0000.0001) > PTRACERS_units(4)='mmol Si/m^3',
@@ -267,7 +290,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(4)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(4)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(4)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(4)='input/loc1_sil_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(4)='../input/input/loc1_sil_janprof.bin',
 (PID.TID 0000.0001) ># tracer 5 - DOP
 (PID.TID 0000.0001) > PTRACERS_names(5)='DOP',
 (PID.TID 0000.0001) > PTRACERS_units(5)='mmol P/m^3',
@@ -276,7 +299,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(5)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(5)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(5)=.TRUE.,  ,
-(PID.TID 0000.0001) > PTRACERS_initialFile(5)='input/loc1_DOP_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(5)='../input/input/loc1_DOP_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 6 - DON
 (PID.TID 0000.0001) > PTRACERS_names(6)='DON',
 (PID.TID 0000.0001) > PTRACERS_units(6)='mmol N/m^3',
@@ -285,7 +308,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(6)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(6)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(6)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(6)='input/loc1_DON_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(6)='../input/input/loc1_DON_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 7 - DOFe
 (PID.TID 0000.0001) > PTRACERS_names(7)='DOFe',
 (PID.TID 0000.0001) > PTRACERS_units(7)='mmol Fe/m^3',
@@ -294,7 +317,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(7)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(7)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(7)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(7)='input/loc1_DOFe_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(7)='../input/input/loc1_DOFe_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 8 - ZOO1P
 (PID.TID 0000.0001) > PTRACERS_names(8)='ZOO1P',
 (PID.TID 0000.0001) > PTRACERS_units(8)='mmol P/m^3',
@@ -303,7 +326,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(8)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(8)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(8)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(8)='input/loc1_ZOOP_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(8)='../input/input/loc1_ZOOP_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 9 - ZOO1N
 (PID.TID 0000.0001) > PTRACERS_names(9)='ZOO1N',
 (PID.TID 0000.0001) > PTRACERS_units(9)='mmol N/m^3'
@@ -312,7 +335,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(9)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(9)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(9)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(9)='input/loc1_ZOON_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(9)='../input/input/loc1_ZOON_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 10 - ZOO1Fe
 (PID.TID 0000.0001) > PTRACERS_names(10)='ZOO1Fe',
 (PID.TID 0000.0001) > PTRACERS_units(10)='mmol Fe/m^3'
@@ -321,7 +344,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(10)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(10)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(10)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(10)='input/loc1_ZOOFe_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(10)='../input/input/loc1_ZOOFe_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 11 - ZOO1Si
 (PID.TID 0000.0001) > PTRACERS_names(11)='ZOO1Si',
 (PID.TID 0000.0001) > PTRACERS_units(11)='mmol Si/m^3'
@@ -330,7 +353,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(11)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(11)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(11)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(11)='input/loc1_ZOOSi_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(11)='../input/input/loc1_ZOOSi_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 12 - ZOO2P
 (PID.TID 0000.0001) > PTRACERS_names(12)='ZOO2P',
 (PID.TID 0000.0001) > PTRACERS_units(12)='mmol P/m^3',
@@ -339,7 +362,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(12)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(12)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(12)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(12)='input/loc1_ZOOP_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(12)='../input/input/loc1_ZOOP_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 13 - ZOO2N
 (PID.TID 0000.0001) > PTRACERS_names(13)='ZOO2N',
 (PID.TID 0000.0001) > PTRACERS_units(13)='mmol N/m^3'
@@ -348,7 +371,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(13)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(13)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(13)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(13)='input/loc1_ZOON_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(13)='../input/input/loc1_ZOON_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 14 - ZOO2Fe
 (PID.TID 0000.0001) > PTRACERS_names(14)='ZOO2Fe',
 (PID.TID 0000.0001) > PTRACERS_units(14)='mmol Fe/m^3'
@@ -357,7 +380,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(14)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(14)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(14)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(14)='input/loc1_ZOOFe_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(14)='../input/input/loc1_ZOOFe_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 15 - ZOO2Si
 (PID.TID 0000.0001) > PTRACERS_names(15)='ZOO2Si',
 (PID.TID 0000.0001) > PTRACERS_units(15)='mmol Si/m^3'
@@ -366,7 +389,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(15)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(15)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(15)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(15)='input/loc1_ZOOSi_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(15)='../input/input/loc1_ZOOSi_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 16 - POP
 (PID.TID 0000.0001) > PTRACERS_names(16)='POP',
 (PID.TID 0000.0001) > PTRACERS_units(16)='mmol P/m^3',
@@ -375,7 +398,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(16)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(16)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(16)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(16)='input/loc1_POP_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(16)='../input/input/loc1_POP_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 17 - PON
 (PID.TID 0000.0001) > PTRACERS_names(17)='PON',
 (PID.TID 0000.0001) > PTRACERS_units(17)='mmol N/m^3',
@@ -384,7 +407,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(17)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(17)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(17)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(17)='input/loc1_PON_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(17)='../input/input/loc1_PON_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 18 - POFe
 (PID.TID 0000.0001) > PTRACERS_names(18)='POFe',
 (PID.TID 0000.0001) > PTRACERS_units(18)='mmol Fe/m^3'
@@ -393,7 +416,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(18)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(18)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(18)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(18)='input/loc1_POFe_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(18)='../input/input/loc1_POFe_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 19 - POSi
 (PID.TID 0000.0001) > PTRACERS_names(19)='POSi',
 (PID.TID 0000.0001) > PTRACERS_units(19)='mmol Si/m^3'
@@ -402,7 +425,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(19)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(19)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(19)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(19)='input/loc1_POSi_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(19)='../input/input/loc1_POSi_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 20 - NH4
 (PID.TID 0000.0001) > PTRACERS_names(20)='NH4',
 (PID.TID 0000.0001) > PTRACERS_units(20)='mmol N/m^3'
@@ -411,7 +434,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(20)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(20)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(20)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(20)='input/loc1_NH4_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(20)='../input/input/loc1_NH4_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 21 - NO2
 (PID.TID 0000.0001) > PTRACERS_names(21)='NO2',
 (PID.TID 0000.0001) > PTRACERS_units(21)='mmol N/m^3'
@@ -420,7 +443,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(21)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(21)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(21)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(21)='input/loc1_NO2_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(21)='../input/input/loc1_NO2_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 22 - PHYT01
 (PID.TID 0000.0001) > PTRACERS_names(22)='Phy1',
 (PID.TID 0000.0001) > PTRACERS_units(22)='mmol P/m^3'
@@ -429,7 +452,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(22)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(22)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(22)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(22)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(22)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 23 - PHYT02
 (PID.TID 0000.0001) > PTRACERS_names(23)='Phy2',
 (PID.TID 0000.0001) > PTRACERS_units(23)='mmol P/m^3'
@@ -438,7 +461,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(23)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(23)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(23)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(23)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(23)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 24 - PHYT03
 (PID.TID 0000.0001) > PTRACERS_names(24)='Phy3',
 (PID.TID 0000.0001) > PTRACERS_units(24)='mmol P/m^3'
@@ -447,7 +470,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(24)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(24)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(24)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(24)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(24)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 25 - PHYT04
 (PID.TID 0000.0001) > PTRACERS_names(25)='Phy4',
 (PID.TID 0000.0001) > PTRACERS_units(25)='mmol P/m^3'
@@ -456,7 +479,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(25)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(25)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(25)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(25)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(25)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 26 - PHYT05
 (PID.TID 0000.0001) > PTRACERS_names(26)='Phy5',
 (PID.TID 0000.0001) > PTRACERS_units(26)='mmol P/m^3'
@@ -465,7 +488,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(26)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(26)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(26)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(26)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(26)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 27 - PHYT06
 (PID.TID 0000.0001) > PTRACERS_names(27)='Phy6',
 (PID.TID 0000.0001) > PTRACERS_units(27)='mmol P/m^3'
@@ -474,7 +497,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(27)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(27)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(27)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(27)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(27)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 28 - PHYT07
 (PID.TID 0000.0001) > PTRACERS_names(28)='Phy7',
 (PID.TID 0000.0001) > PTRACERS_units(28)='mmol P/m^3'
@@ -483,7 +506,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(28)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(28)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(28)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(28)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(28)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 29 - PHYT08
 (PID.TID 0000.0001) > PTRACERS_names(29)='Phy8',
 (PID.TID 0000.0001) > PTRACERS_units(29)='mmol P/m^3'
@@ -492,7 +515,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(29)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(29)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(29)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(29)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(29)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 30 - PHYT09
 (PID.TID 0000.0001) > PTRACERS_names(30)='Phy9',
 (PID.TID 0000.0001) > PTRACERS_units(30)='mmol P/m^3'
@@ -501,7 +524,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(30)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(30)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(30)=.TRUE.,
-(PID.TID 0000.0001) > PTRACERS_initialFile(30)='input/loc1_biomass_run83_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(30)='../input/input/loc1_biomass_run83_janprof.bin',
 (PID.TID 0000.0001) ># tracer 31 - DIC
 (PID.TID 0000.0001) > PTRACERS_names(31)='DIC',
 (PID.TID 0000.0001) > PTRACERS_units(31)='mmol C/m^3'
@@ -510,7 +533,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(31)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(31)=.FALSE. ,
 (PID.TID 0000.0001) > PTRACERS_useKPP(31)=.TRUE.  ,
-(PID.TID 0000.0001) > PTRACERS_initialFile(31)='input/loc1_dic_annprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(31)='../input/input/loc1_dic_annprof.bin',
 (PID.TID 0000.0001) ># tracer 32 - DOC
 (PID.TID 0000.0001) > PTRACERS_names(32)='DOC',
 (PID.TID 0000.0001) > PTRACERS_units(32)='mmol C/m^3'
@@ -546,7 +569,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(35)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(35)=.FALSE.,
 (PID.TID 0000.0001) > PTRACERS_useKPP(35)=.TRUE.  ,
-(PID.TID 0000.0001) > PTRACERS_initialFile(35)='input/loc1_alk_annprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(35)='../input/input/loc1_alk_annprof.bin',
 (PID.TID 0000.0001) ># tracer 36 - O2
 (PID.TID 0000.0001) > PTRACERS_names(36)='O2',
 (PID.TID 0000.0001) > PTRACERS_units(36)='mmol O/m^3'
@@ -555,7 +578,7 @@
 (PID.TID 0000.0001) > PTRACERS_diffKr(36)=1.E-5,
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(36)=.FALSE.,
 (PID.TID 0000.0001) > PTRACERS_useKPP(36)=.TRUE.  ,
-(PID.TID 0000.0001) > PTRACERS_initialFile(36)='input/loc1_o2_janprof.bin',
+(PID.TID 0000.0001) > PTRACERS_initialFile(36)='../input/input/loc1_o2_janprof.bin',
 (PID.TID 0000.0001) ># tracer 37 - ZOOC1
 (PID.TID 0000.0001) > PTRACERS_names(37)='ZOOC1',
 (PID.TID 0000.0001) > PTRACERS_units(37)='mmol C/m^3'
@@ -574,7 +597,7 @@
 (PID.TID 0000.0001) > PTRACERS_useGMRedi(38)=.FALSE.,
 (PID.TID 0000.0001) > PTRACERS_useKPP(38)=.TRUE.  ,
 (PID.TID 0000.0001) > PTRACERS_initialFile(38)=' ',
-(PID.TID 0000.0001) > &
+(PID.TID 0000.0001) > /
 (PID.TID 0000.0001) 
 (PID.TID 0000.0001)  PTRACERS_READPARMS: finished reading data.ptracers
 (PID.TID 0000.0001) // ===================================
@@ -602,10 +625,10 @@
 (PID.TID 0000.0001)                   F
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) PTRACERS_timeave_mnc = /* use MNC for Tave output */
-(PID.TID 0000.0001)                   F
+(PID.TID 0000.0001)                   T
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) PTRACERS_snapshot_mnc = /* use MNC for snapshot output */
-(PID.TID 0000.0001)                   F
+(PID.TID 0000.0001)                   T
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) PTRACERS_pickup_write_mnc = /* use MNC for writing pickups */
 (PID.TID 0000.0001)                   F
@@ -2189,8 +2212,8 @@
 (PID.TID 0000.0001) // Parameter file "data.darwin"
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) > &DARWIN_FORCING
-(PID.TID 0000.0001) > darwin_ironFile='input/loc1_FeFlux_monsurf.bin',
-(PID.TID 0000.0001) > darwin_PARFile='input/loc1_owsm_PAR_monsurf.bin',
+(PID.TID 0000.0001) > darwin_ironFile='../input/input/loc1_FeFlux_monsurf.bin',
+(PID.TID 0000.0001) > darwin_PARFile='../input/input/loc1_owsm_PAR_monsurf.bin',
 (PID.TID 0000.0001) > darwin_ForcingPeriod=2592000.,
 (PID.TID 0000.0001) > darwin_ForcingCycle=31104000.,
 (PID.TID 0000.0001) > darwin_seed=11231,
@@ -2211,7 +2234,12 @@
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001)  -----------------------------------
 (PID.TID 0000.0001) darwin_waves =   /* "central" wavelengths of wavebands */
-(PID.TID 0000.0001)    13 @        0                            /* ?=   1: 13 */
+(PID.TID 0000.0001)     2 @        0,                           /* ?=   1:  2 */
+(PID.TID 0000.0001)                50621952,                    /* ?=   3 */
+(PID.TID 0000.0001)     5 @        0,                           /* ?=   4:  8 */
+(PID.TID 0000.0001)                43057776,                    /* ?=   9 */
+(PID.TID 0000.0001)                   32767,                    /* ?=  10 */
+(PID.TID 0000.0001)     3 @        0                            /* ?=  11: 13 */
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001)  ===================================
 (PID.TID 0000.0001) SET_PARMS: done
@@ -2288,7 +2316,7 @@
 (PID.TID 0000.0001) %MON AngleSN_min                  =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON AngleSN_mean                 =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON AngleSN_sd                   =   0.0000000000000E+00
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/bathyneg.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/bathyneg.bin
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) // Field Model R_low (ini_masks_etc) at iteration          1
 (PID.TID 0000.0001) // CMIN =         -3.495000000000000E+03
@@ -2982,6 +3010,12 @@
 (PID.TID 0000.0001) pickup_read_mdsio =   /* Model IO flag. */
 (PID.TID 0000.0001)                   T
 (PID.TID 0000.0001)     ;
+(PID.TID 0000.0001) pickup_write_mnc =   /* Model IO flag. */
+(PID.TID 0000.0001)                   F
+(PID.TID 0000.0001)     ;
+(PID.TID 0000.0001) pickup_read_mnc =   /* Model IO flag. */
+(PID.TID 0000.0001)                   F
+(PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) pickup_write_immed =   /* Model IO flag. */
 (PID.TID 0000.0001)                   F
 (PID.TID 0000.0001)     ;
@@ -2995,6 +3029,9 @@
 (PID.TID 0000.0001)                   T
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) snapshot_mdsio =   /* Model IO flag. */
+(PID.TID 0000.0001)                   F
+(PID.TID 0000.0001)     ;
+(PID.TID 0000.0001) snapshot_mnc =   /* Model IO flag. */
 (PID.TID 0000.0001)                   T
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) monitorFreq =   /* Monitor output interval ( s ). */
@@ -3005,6 +3042,9 @@
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) monitor_stdio =   /* Model IO flag. */
 (PID.TID 0000.0001)                   T
+(PID.TID 0000.0001)     ;
+(PID.TID 0000.0001) monitor_mnc =   /* Model IO flag. */
+(PID.TID 0000.0001)                   F
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) externForcingPeriod =   /* forcing period (s) */
 (PID.TID 0000.0001)                 2.592000000000000E+06
@@ -3201,9 +3241,9 @@
 (PID.TID 0000.0001)     ;
 (PID.TID 0000.0001) dBdrRef = /* Vertical grad. of reference buoyancy [(m/s/r)^2] */
 (PID.TID 0000.0001)                 0.000000000000000E+00,      /* K =  1 */
-(PID.TID 0000.0001)                 1.232578190458706E-04,      /* K =  2 */
-(PID.TID 0000.0001)                 3.063957957314772E-05,      /* K =  3 */
-(PID.TID 0000.0001)                 1.521320422053257E-04,      /* K =  4 */
+(PID.TID 0000.0001)                 1.232578190459821E-04,      /* K =  2 */
+(PID.TID 0000.0001)                 3.063957957303617E-05,      /* K =  3 */
+(PID.TID 0000.0001)                 1.521320422054373E-04,      /* K =  4 */
 (PID.TID 0000.0001)                 3.021271930223580E-05,      /* K =  5 */
 (PID.TID 0000.0001)                 1.499903428890670E-04,      /* K =  6 */
 (PID.TID 0000.0001)                 1.186737265074332E-04,      /* K =  7 */
@@ -3212,11 +3252,11 @@
 (PID.TID 0000.0001)                 1.151380441308261E-04,      /* K = 10 */
 (PID.TID 0000.0001)                 5.712979717883684E-05,      /* K = 11 */
 (PID.TID 0000.0001)                 8.515049872565506E-05,      /* K = 12 */
-(PID.TID 0000.0001)                 8.448721842752584E-05,      /* K = 13 */
-(PID.TID 0000.0001)                 1.116043428727742E-04,      /* K = 14 */
+(PID.TID 0000.0001)                 8.448721842774896E-05,      /* K = 13 */
+(PID.TID 0000.0001)                 1.116043428725511E-04,      /* K = 14 */
 (PID.TID 0000.0001)                 1.102373809396796E-04,      /* K = 15 */
-(PID.TID 0000.0001)                 1.798828639201229E-04,      /* K = 16 */
-(PID.TID 0000.0001)                 1.918102676982359E-04,      /* K = 17 */
+(PID.TID 0000.0001)                 1.798828639202717E-04,      /* K = 16 */
+(PID.TID 0000.0001)                 1.918102676980872E-04,      /* K = 17 */
 (PID.TID 0000.0001)                 1.853506120896664E-04,      /* K = 18 */
 (PID.TID 0000.0001)                 1.787791674911888E-04,      /* K = 19 */
 (PID.TID 0000.0001)                 9.455522998141848E-05,      /* K = 20 */
@@ -3229,9 +3269,9 @@
 (PID.TID 0000.0001)                 3.215311288275425E-05,      /* K = 27 */
 (PID.TID 0000.0001)                 2.340106578013931E-05,      /* K = 28 */
 (PID.TID 0000.0001)                 8.957465806881803E-06,      /* K = 29 */
-(PID.TID 0000.0001)                 2.029141226798659E-06,      /* K = 30 */
+(PID.TID 0000.0001)                 2.029141226789735E-06,      /* K = 30 */
 (PID.TID 0000.0001)                 0.000000000000000E+00,      /* K = 31 */
-(PID.TID 0000.0001)                 1.052869956702152E-06,      /* K = 32 */
+(PID.TID 0000.0001)                 1.052869956707729E-06,      /* K = 32 */
 (PID.TID 0000.0001)                 1.465965950004292E-06,      /* K = 33 */
 (PID.TID 0000.0001)                 6.817081889333135E-07,      /* K = 34 */
 (PID.TID 0000.0001)                 6.544800624285541E-07       /* K = 35 */
@@ -3363,47 +3403,47 @@
 (PID.TID 0000.0001) // CONFIG_CHECK : Normal End
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) 
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_temp_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/salt_uniform.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_temp_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/salt_uniform.bin
 (PID.TID 0000.0001) Start initial hydrostatic pressure computation
 (PID.TID 0000.0001) Pressure is predetermined for buoyancyRelation OCEANIC
 (PID.TID 0000.0001) 
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_taux_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_tauy_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_temp_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_phos_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_nitr_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/fet_uniform.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_sil_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_DOP_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_DON_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_DOFe_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_ZOOP_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_ZOON_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_ZOOFe_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_ZOOSi_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_ZOOP_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_ZOON_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_ZOOFe_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_ZOOSi_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_POP_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_PON_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_POFe_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_POSi_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_NH4_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_NO2_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_biomass_run83_janprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_dic_annprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_alk_annprof.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_o2_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_taux_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_tauy_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_temp_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_phos_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_nitr_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/fet_uniform.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_sil_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_DOP_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_DON_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_DOFe_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_ZOOP_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_ZOON_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_ZOOFe_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_ZOOSi_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_ZOOP_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_ZOON_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_ZOOFe_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_ZOOSi_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_POP_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_PON_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_POFe_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_POSi_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_NH4_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_NO2_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_biomass_run83_janprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_dic_annprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_alk_annprof.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_o2_janprof.bin
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) // Darwin init variables >>> START <<<
 (PID.TID 0000.0001) // =======================================================
@@ -3449,9 +3489,7 @@
 (PID.TID 0000.0001) // Darwin init variables >>> END <<<
 (PID.TID 0000.0001) // =======================================================
  QQ: pCO2 approximation method
- QQ first guess pH   8.09299536910115        8.29599952697754     
-   35.0000000000000        2.07889170030455       1.071250012734670E-003
-  9.738000497816132E-004   2.27507481509150     
+ QQ first guess pH   8.0929953691011356        8.2959995269775391        35.000000000000000        2.0788917003045526       1.07125001273467024E-003  9.73800049781613219E-004   2.2750748150915001     
  QQ start timeave
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) // Model current state
@@ -3719,7 +3757,7 @@
 (PID.TID 0000.0001) %MON trcstat_ptracer34_mean       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer34_sd         =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer34_del2       =   0.0000000000000E+00
-(PID.TID 0000.0001) %MON trcstat_ptracer35_max        =   2.3492329101562E+03
+(PID.TID 0000.0001) %MON trcstat_ptracer35_max        =   2.3492329101563E+03
 (PID.TID 0000.0001) %MON trcstat_ptracer35_min        =   2.2738413085938E+03
 (PID.TID 0000.0001) %MON trcstat_ptracer35_mean       =   2.3217994589089E+03
 (PID.TID 0000.0001) %MON trcstat_ptracer35_sd         =   2.4949346199965E+01
@@ -3743,20 +3781,20 @@
 (PID.TID 0000.0001) // End MONITOR ptracers field statistics
 (PID.TID 0000.0001) // =======================================================
 S/R EXTERNAL_FIELDS_LOAD: Reading new data:   12    1         0  0.000000000000E+00
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_taux_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_taux_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_tauy_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_tauy_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_temp_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_temp_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_taux_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_taux_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_tauy_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_tauy_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_temp_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_temp_monsurf.bin
 time,SST,SSS,fu,fv,Q,E-P,i0,i1,a,b =   0.0000E+00  8.0636E+00  0.0000E+00  2.2645E+00 -4.1300E-01  0.0000E+00  0.0000E+00    12     1  5.0000E-01  5.0000E-01
 time,fu0,fu1,fu =   0.0000E+00  2.2080E+00  2.3210E+00  2.2645E+00  5.000000000000000E-01  5.000000000000000E-01
 (PID.TID 0000.0001) S/R DARWIN_FIELDS_LOAD: Reading forcing data  0.000000000000E+00          0
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_FeFlux_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_FeFlux_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_owsm_PAR_monsurf.bin
-(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: input/loc1_owsm_PAR_monsurf.bin
- mean surface dic   2078.16002957955        35.0000000000000     
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_FeFlux_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_FeFlux_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_owsm_PAR_monsurf.bin
+(PID.TID 0000.0001)  MDS_READ_FIELD: opening global file: ../input/input/loc1_owsm_PAR_monsurf.bin
+ mean surface dic   2078.1600295795542        35.000000000000000     
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) // Begin MONITOR dynamic field statistics
 (PID.TID 0000.0001) // =======================================================
@@ -3861,8 +3899,8 @@ time,fu0,fu1,fu =   0.0000E+00  2.2080E+00  2.3210E+00  2.2645E+00  5.0000000000
 (PID.TID 0000.0001) %MON trcstat_ptracer02_del2       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer03_max        =   1.0618725947348E-03
 (PID.TID 0000.0001) %MON trcstat_ptracer03_min        =   1.0610317088646E-03
-(PID.TID 0000.0001) %MON trcstat_ptracer03_mean       =   1.0610448791521E-03
-(PID.TID 0000.0001) %MON trcstat_ptracer03_sd         =   4.4562172117195E-08
+(PID.TID 0000.0001) %MON trcstat_ptracer03_mean       =   1.0610449877200E-03
+(PID.TID 0000.0001) %MON trcstat_ptracer03_sd         =   4.4565659591265E-08
 (PID.TID 0000.0001) %MON trcstat_ptracer03_del2       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer04_max        =   9.2368795552511E+01
 (PID.TID 0000.0001) %MON trcstat_ptracer04_min        =   4.2814067433171E-01
@@ -4044,7 +4082,7 @@ time,fu0,fu1,fu =   0.0000E+00  2.2080E+00  2.3210E+00  2.2645E+00  5.0000000000
 (PID.TID 0000.0001) // =======================================================
 time,SST,SSS,fu,fv,Q,E-P,i0,i1,a,b =   3.6000E+03  8.0643E+00  0.0000E+00  2.2647E+00 -4.1313E-01  0.0000E+00  0.0000E+00    12     1  5.0139E-01  4.9861E-01
 time,fu0,fu1,fu =   3.6000E+03  2.2080E+00  2.3210E+00  2.2647E+00  5.013888888888889E-01  4.986111111111111E-01
- mean surface dic   2078.30574236367        35.0000000000000     
+ mean surface dic   2078.3057423636715        35.000000000000000     
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) // Begin MONITOR dynamic field statistics
 (PID.TID 0000.0001) // =======================================================
@@ -4149,8 +4187,8 @@ time,fu0,fu1,fu =   3.6000E+03  2.2080E+00  2.3210E+00  2.2647E+00  5.0138888888
 (PID.TID 0000.0001) %MON trcstat_ptracer02_del2       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer03_max        =   1.0542975723527E-03
 (PID.TID 0000.0001) %MON trcstat_ptracer03_min        =   1.0531623960762E-03
-(PID.TID 0000.0001) %MON trcstat_ptracer03_mean       =   1.0531807882476E-03
-(PID.TID 0000.0001) %MON trcstat_ptracer03_sd         =   6.0177818412418E-08
+(PID.TID 0000.0001) %MON trcstat_ptracer03_mean       =   1.0531809399812E-03
+(PID.TID 0000.0001) %MON trcstat_ptracer03_sd         =   6.0182868346791E-08
 (PID.TID 0000.0001) %MON trcstat_ptracer03_del2       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer04_max        =   9.2368793802785E+01
 (PID.TID 0000.0001) %MON trcstat_ptracer04_min        =   4.4054107041582E-01
@@ -4332,7 +4370,7 @@ time,fu0,fu1,fu =   3.6000E+03  2.2080E+00  2.3210E+00  2.2647E+00  5.0138888888
 (PID.TID 0000.0001) // =======================================================
 time,SST,SSS,fu,fv,Q,E-P,i0,i1,a,b =   7.2000E+03  8.0649E+00  0.0000E+00  2.2648E+00 -4.1325E-01  0.0000E+00  0.0000E+00    12     1  5.0278E-01  4.9722E-01
 time,fu0,fu1,fu =   7.2000E+03  2.2080E+00  2.3210E+00  2.2648E+00  5.027777777777778E-01  4.972222222222222E-01
- mean surface dic   2078.58440761177        35.0000000000000     
+ mean surface dic   2078.5844076117733        35.000000000000000     
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) // Begin MONITOR dynamic field statistics
 (PID.TID 0000.0001) // =======================================================
@@ -4437,8 +4475,8 @@ time,fu0,fu1,fu =   7.2000E+03  2.2080E+00  2.3210E+00  2.2648E+00  5.0277777777
 (PID.TID 0000.0001) %MON trcstat_ptracer02_del2       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer03_max        =   1.0536119263698E-03
 (PID.TID 0000.0001) %MON trcstat_ptracer03_min        =   1.0524370994668E-03
-(PID.TID 0000.0001) %MON trcstat_ptracer03_mean       =   1.0524564729343E-03
-(PID.TID 0000.0001) %MON trcstat_ptracer03_sd         =   6.2302077214861E-08
+(PID.TID 0000.0001) %MON trcstat_ptracer03_mean       =   1.0524566328837E-03
+(PID.TID 0000.0001) %MON trcstat_ptracer03_sd         =   6.2307499862224E-08
 (PID.TID 0000.0001) %MON trcstat_ptracer03_del2       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer04_max        =   9.2368792053067E+01
 (PID.TID 0000.0001) %MON trcstat_ptracer04_min        =   4.7138623860724E-01
@@ -4620,7 +4658,7 @@ time,fu0,fu1,fu =   7.2000E+03  2.2080E+00  2.3210E+00  2.2648E+00  5.0277777777
 (PID.TID 0000.0001) // =======================================================
 time,SST,SSS,fu,fv,Q,E-P,i0,i1,a,b =   1.0800E+04  8.0656E+00  0.0000E+00  2.2650E+00 -4.1338E-01  0.0000E+00  0.0000E+00    12     1  5.0417E-01  4.9583E-01
 time,fu0,fu1,fu =   1.0800E+04  2.2080E+00  2.3210E+00  2.2650E+00  5.041666666666667E-01  4.958333333333333E-01
- mean surface dic   2078.91971983554        35.0000000000000     
+ mean surface dic   2078.9197198355414        35.000000000000000     
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) // Begin MONITOR dynamic field statistics
 (PID.TID 0000.0001) // =======================================================
@@ -4725,8 +4763,8 @@ time,fu0,fu1,fu =   1.0800E+04  2.2080E+00  2.3210E+00  2.2650E+00  5.0416666666
 (PID.TID 0000.0001) %MON trcstat_ptracer02_del2       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer03_max        =   1.0535450534574E-03
 (PID.TID 0000.0001) %MON trcstat_ptracer03_min        =   1.0523356116931E-03
-(PID.TID 0000.0001) %MON trcstat_ptracer03_mean       =   1.0523816115034E-03
-(PID.TID 0000.0001) %MON trcstat_ptracer03_sd         =   6.4341451065915E-08
+(PID.TID 0000.0001) %MON trcstat_ptracer03_mean       =   1.0523817727477E-03
+(PID.TID 0000.0001) %MON trcstat_ptracer03_sd         =   6.4358580936467E-08
 (PID.TID 0000.0001) %MON trcstat_ptracer03_del2       =   0.0000000000000E+00
 (PID.TID 0000.0001) %MON trcstat_ptracer04_max        =   9.2368790303358E+01
 (PID.TID 0000.0001) %MON trcstat_ptracer04_min        =   4.8377672121171E-01
@@ -4908,123 +4946,123 @@ time,fu0,fu1,fu =   1.0800E+04  2.2080E+00  2.3210E+00  2.2650E+00  5.0416666666
 (PID.TID 0000.0001) // =======================================================
 (PID.TID 0000.0001) %CHECKPOINT         4 ckptA
 (PID.TID 0000.0001)   Seconds in section "ALL                    [THE_MODEL_MAIN]":
-(PID.TID 0000.0001)           User time:  7.999999821186066E-002
-(PID.TID 0000.0001)         System time:  0.100000001490116
-(PID.TID 0000.0001)     Wall clock time:   1.92984008789062
+(PID.TID 0000.0001)           User time:  0.81000000000000005
+(PID.TID 0000.0001)         System time:  5.99999999999999978E-002
+(PID.TID 0000.0001)     Wall clock time:   2.4922862052917480
 (PID.TID 0000.0001)          No. starts:           1
 (PID.TID 0000.0001)           No. stops:           1
 (PID.TID 0000.0001)   Seconds in section "INITIALISE_FIXED       [THE_MODEL_MAIN]":
-(PID.TID 0000.0001)           User time:  3.999999910593033E-002
-(PID.TID 0000.0001)         System time:  3.999999910593033E-002
-(PID.TID 0000.0001)     Wall clock time:  0.738683938980103
+(PID.TID 0000.0001)           User time:  0.45000000000000001
+(PID.TID 0000.0001)         System time:  2.99999999999999989E-002
+(PID.TID 0000.0001)     Wall clock time:   1.1898720264434814
 (PID.TID 0000.0001)          No. starts:           1
 (PID.TID 0000.0001)           No. stops:           1
 (PID.TID 0000.0001)   Seconds in section "THE_MAIN_LOOP          [THE_MODEL_MAIN]":
-(PID.TID 0000.0001)           User time:  3.999999910593033E-002
-(PID.TID 0000.0001)         System time:  6.000000238418579E-002
-(PID.TID 0000.0001)     Wall clock time:   1.18182802200317
+(PID.TID 0000.0001)           User time:  0.35000000000000003
+(PID.TID 0000.0001)         System time:  2.99999999999999989E-002
+(PID.TID 0000.0001)     Wall clock time:   1.3013389110565186
 (PID.TID 0000.0001)          No. starts:           1
 (PID.TID 0000.0001)           No. stops:           1
 (PID.TID 0000.0001)   Seconds in section "INITIALISE_VARIA    [THE_MAIN_LOOP]":
-(PID.TID 0000.0001)           User time:  1.000000163912773E-002
-(PID.TID 0000.0001)         System time:  3.000000119209290E-002
-(PID.TID 0000.0001)     Wall clock time:  0.805016994476318
+(PID.TID 0000.0001)           User time:  4.99999999999999889E-002
+(PID.TID 0000.0001)         System time:  2.00000000000000039E-002
+(PID.TID 0000.0001)     Wall clock time:  0.83291482925415039
 (PID.TID 0000.0001)          No. starts:           1
 (PID.TID 0000.0001)           No. stops:           1
 (PID.TID 0000.0001)   Seconds in section "MAIN LOOP           [THE_MAIN_LOOP]":
-(PID.TID 0000.0001)           User time:  2.999999746680260E-002
-(PID.TID 0000.0001)         System time:  3.000000119209290E-002
-(PID.TID 0000.0001)     Wall clock time:  0.376776933670044
+(PID.TID 0000.0001)           User time:  0.30000000000000004
+(PID.TID 0000.0001)         System time:  9.99999999999999500E-003
+(PID.TID 0000.0001)     Wall clock time:  0.46837115287780762
 (PID.TID 0000.0001)          No. starts:           1
 (PID.TID 0000.0001)           No. stops:           1
 (PID.TID 0000.0001)   Seconds in section "FORWARD_STEP        [THE_MAIN_LOOP]":
-(PID.TID 0000.0001)           User time:  2.999999746680260E-002
-(PID.TID 0000.0001)         System time:  3.000000119209290E-002
-(PID.TID 0000.0001)     Wall clock time:  0.376730442047119
+(PID.TID 0000.0001)           User time:  0.29999999999999993
+(PID.TID 0000.0001)         System time:  9.99999999999999500E-003
+(PID.TID 0000.0001)     Wall clock time:  0.46830272674560547
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "LOAD_FIELDS_DRIVER  [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  1.018190383911133E-002
+(PID.TID 0000.0001)           User time:  1.00000000000000089E-002
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  1.65176391601562500E-003
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "EXTERNAL_FLDS_LOAD [LOAD_FLDS_DRIVER]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  5.939006805419922E-004
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  8.55207443237304688E-004
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "DO_ATMOSPHERIC_PHYS [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  8.916854858398438E-005
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  5.81741333007812500E-005
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "DO_OCEANIC_PHYS     [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  2.908229827880859E-003
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  1.55379772186279297E-002
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "KPP_CALC [DO_OCEANIC_PHYS]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  2.359867095947266E-003
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  1.39014720916748047E-002
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "GCHEM_CALC_TENDENCY [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  3.242492675781250E-005
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  4.81605529785156250E-005
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "THERMODYNAMICS      [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  1.000000163912773E-002
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  2.408719062805176E-002
+(PID.TID 0000.0001)           User time:  0.21999999999999997
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  0.21061110496520996
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "TRC_CORRECTION_STEP [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  1.413822174072266E-004
+(PID.TID 0000.0001)           User time:  1.00000000000000089E-002
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  3.52907180786132813E-003
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "GCHEM_FORCING_SEP  [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  7.591247558593750E-004
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  4.04787063598632813E-003
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "BLOCKING_EXCHANGES  [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  1.513004302978516E-003
+(PID.TID 0000.0001)           User time:  1.00000000000000089E-002
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  1.56629085540771484E-002
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "DO_STATEVARS_TAVE   [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  1.280307769775391E-004
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  5.81026077270507813E-004
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "MONITOR             [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  9.999997913837433E-003
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  3.485202789306641E-003
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  4.79292869567871094E-003
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "DO_THE_MODEL_IO     [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  9.999997913837433E-003
-(PID.TID 0000.0001)         System time:  3.000000119209290E-002
-(PID.TID 0000.0001)     Wall clock time:  0.300411939620972
+(PID.TID 0000.0001)           User time:  5.00000000000000444E-002
+(PID.TID 0000.0001)         System time:  9.99999999999999500E-003
+(PID.TID 0000.0001)     Wall clock time:  0.20364189147949219
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001)   Seconds in section "DO_WRITE_PICKUP     [FORWARD_STEP]":
-(PID.TID 0000.0001)           User time:  0.000000000000000E+000
-(PID.TID 0000.0001)         System time:  0.000000000000000E+000
-(PID.TID 0000.0001)     Wall clock time:  3.247785568237305E-002
+(PID.TID 0000.0001)           User time:   0.0000000000000000
+(PID.TID 0000.0001)         System time:   0.0000000000000000
+(PID.TID 0000.0001)     Wall clock time:  7.44938850402832031E-003
 (PID.TID 0000.0001)          No. starts:           4
 (PID.TID 0000.0001)           No. stops:           4
 (PID.TID 0000.0001) // ======================================================
@@ -5042,9 +5080,9 @@ time,fu0,fu1,fu =   1.0800E+04  2.2080E+00  2.3210E+00  2.2650E+00  5.0416666666
 (PID.TID 0000.0001) //          Total. Y spins =              0
 (PID.TID 0000.0001) //            Avg. Y spins =       0.00E+00
 (PID.TID 0000.0001) // o Thread number: 000001
-(PID.TID 0000.0001) //            No. barriers =          15474
+(PID.TID 0000.0001) //            No. barriers =           9142
 (PID.TID 0000.0001) //      Max. barrier spins =              1
 (PID.TID 0000.0001) //      Min. barrier spins =              1
-(PID.TID 0000.0001) //     Total barrier spins =          15474
+(PID.TID 0000.0001) //     Total barrier spins =           9142
 (PID.TID 0000.0001) //      Avg. barrier spins =       1.00E+00
 PROGRAM MAIN: Execution ended Normally
