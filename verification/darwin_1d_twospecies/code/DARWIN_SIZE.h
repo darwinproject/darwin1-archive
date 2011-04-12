@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_twospecies/code/DARWIN_SIZE.h,v 1.2 2010/05/23 14:53:51 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_1d_twospecies/code/DARWIN_SIZE.h,v 1.3 2011/04/12 19:25:10 jahn Exp $
 C $Name:  $
 
 c DARWIN_SIZE.h 
@@ -15,11 +15,6 @@ c
          INTEGER npmax
          INTEGER nzmax
          PARAMETER(npmax=2,nzmax=2)
-
-         INTEGER tlam
-         PARAMETER (tlam=13)
-         INTEGER tnabp
-         PARAMETER (tnabp=4)
 
 C iPO4          :: index of PO4  in Ptracer
 C iNO3          :: index of NO3  in Ptracer
