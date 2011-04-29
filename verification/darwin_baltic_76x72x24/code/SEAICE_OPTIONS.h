@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/SEAICE_OPTIONS.h,v 1.7 2010/10/29 15:59:56 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/SEAICE_OPTIONS.h,v 1.8 2011/04/29 15:08:06 jahn Exp $
 C $Name:  $
 
 C     *==========================================================*
@@ -68,7 +68,7 @@ C--   Allow SEAICEuseFlooding, which converts snow to ice if submerged.
 #define ALLOW_SEAICE_FLOODING
 
 C--   By default sea ice is fresh.  Set following flag for salty ice.
-#undef SEAICE_SALINITY
+#undef SEAICE_VARIABLE_SALINITY
 
 C--   Track sea ice age.
 C     By default sea ice age is associated with ice area.
