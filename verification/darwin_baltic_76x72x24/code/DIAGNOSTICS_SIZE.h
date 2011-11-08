@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/DIAGNOSTICS_SIZE.h,v 1.2 2010/04/04 15:32:04 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/DIAGNOSTICS_SIZE.h,v 1.3 2011/11/08 14:00:09 jahn Exp $
 C $Name:  $
 
 
@@ -20,7 +20,7 @@ C  and "diagSt_size" (statistics-diags) since values here are deliberately small
       INTEGER    numdiags
       INTEGER    nRegions, sizRegMsk, nStats
       INTEGER    diagSt_size
-      PARAMETER( ndiagMax = 1600 )
+      PARAMETER( ndiagMax = 2000 )
       PARAMETER( numlists = 250, numperlist = 1, numLevels=Nr )
       PARAMETER( numdiags = 1+250*Nr )
       PARAMETER( nRegions = 0 , sizRegMsk = 1 , nStats = 4 )
