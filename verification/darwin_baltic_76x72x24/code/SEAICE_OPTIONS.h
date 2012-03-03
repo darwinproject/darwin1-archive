@@ -1,4 +1,4 @@
-C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/SEAICE_OPTIONS.h,v 1.10 2012/02/11 15:53:41 jahn Exp $
+C $Header: /u/gcmpack/MITgcm_contrib/darwin/verification/darwin_baltic_76x72x24/code/SEAICE_OPTIONS.h,v 1.11 2012/03/03 16:02:35 jahn Exp $
 C $Name:  $
 
 C     *==========================================================*
@@ -64,6 +64,11 @@ C--   The freezing point of water is a simple linear dependence to salinity.
 C     The flag below is now obsolete, but kept to ease the transition
 C     from the old constant freezing point default (see seaice_check.F).
 #define SEAICE_VARIABLE_FREEZING_POINT
+
+C--   The flags below are obsolete, but kept to ease the transition
+C     from the old default to the new one (see seaice_check.F).
+#define MCPHEE_OCEAN_ICE_HEAT_FLUX
+#define GRADIENT_MIXED_LAYER_TURBULENCE_FACTOR
 
 C--   By default sea ice is fresh.  Set following flag for salty ice.
 #undef SEAICE_VARIABLE_SALINITY
